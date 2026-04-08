@@ -1,0 +1,2416 @@
+{
+  "portfolio_parameters": {
+    "start_date": "2026-03-07",
+    "end_date": "2026-04-06",
+    "base_currency": "USD",
+    "benchmark": "SPY",
+    "initial_value": 10000.0,
+    "include_transaction_costs": false,
+    "transaction_costs_applied": null
+  },
+  "portfolio_input": [
+    {
+      "date": "2026-03-07",
+      "ric": "AAPL.O",
+      "weight": 0.25
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "AMZN.O",
+      "weight": 0.25
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "GOOGL.O",
+      "weight": 0.25
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "MSFT.O",
+      "weight": 0.25
+    }
+  ],
+  "data_quality": {
+    "total_rics_requested": 4,
+    "rics_found_in_database": 4,
+    "missing_rics": [],
+    "missing_rics_count": 0,
+    "data_completeness_pct": 100.0,
+    "removed_positions_due_to_missing_prices": {
+      "count": 0,
+      "unique_rics": 0,
+      "details": []
+    },
+    "portfolio_data_quality": {
+      "total_positions": 124,
+      "missing_quantities": 0,
+      "missing_quantities_pct": 0.0,
+      "missing_prices": 0,
+      "missing_prices_pct": 0.0,
+      "missing_values": 0,
+      "missing_values_pct": 0.0
+    }
+  },
+  "portfolio_summary": {
+    "final_value": 9802.1429,
+    "total_return": -0.019786,
+    "total_price_pl": -197.8571,
+    "total_fx_pl": 0.0,
+    "total_pl": -197.8571,
+    "total_transaction_cost": 0.0,
+    "transaction_cost_pct_of_initial": 0.0,
+    "include_transaction_costs": false
+  },
+  "turnover_analysis": {
+    "summary": {
+      "days_in_period": 31,
+      "years_in_period": 0.08,
+      "num_rebalances": 0,
+      "rebalances_per_year": 0.0,
+      "initial_value": 10000.0,
+      "avg_portfolio_value": 9731.72,
+      "annualized_turnover_pct": 0.0,
+      "one_way_turnover_pct": 0.0,
+      "avg_turnover_per_rebalance": 0,
+      "avg_turnover_pct_per_rebalance": 0.0,
+      "total_transaction_cost": 0.0,
+      "annualized_cost_pct": 0.0,
+      "avg_cost_per_rebalance": 0,
+      "cost_pct_of_turnover": 0,
+      "total_buy_value": 0.0,
+      "total_sell_value": 0.0,
+      "total_turnover": 0.0,
+      "include_transaction_costs": false
+    },
+    "by_rebalance": [],
+    "by_market": {
+      "United States": {
+        "buy_value": 0.0,
+        "sell_value": 0.0,
+        "total_turnover": 0.0,
+        "pct_of_total_turnover": 0,
+        "transaction_cost": 0.0,
+        "cost_pct_of_market_turnover": 0,
+        "pct_of_total_cost": 0
+      }
+    }
+  },
+  "performance_metrics": {
+    "portfolio": {
+      "total_return": -0.019786,
+      "annualized_return": -0.209663,
+      "final_value": 9802.1429,
+      "annualized_volatility": 0.189162,
+      "downside_deviation_annual": 0.135428,
+      "max_drawdown": -0.085757,
+      "var_95": -0.018706,
+      "var_99": -0.024166,
+      "cvar_95": -0.02289,
+      "cvar_99": -0.026079,
+      "sharpe_ratio": -0.8371,
+      "sortino_ratio": -1.1693,
+      "calmar_ratio": -2.4448,
+      "omega_ratio": 0.8488,
+      "gain_to_pain_ratio": 0.8608,
+      "return_over_max_drawdown": -0.2307,
+      "win_rate": 0.3548,
+      "avg_win": 0.009997,
+      "avg_loss": -0.014194,
+      "best_day": 0.036992,
+      "worst_day": -0.026079,
+      "positive_days": 11,
+      "negative_days": 9,
+      "max_consecutive_wins": 1,
+      "max_consecutive_losses": 2,
+      "skewness": 0.4567,
+      "kurtosis": 2.2018,
+      "recovery_days_from_max_dd": 0,
+      "days": 31
+    },
+    "benchmark": {
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "final_value": 10000.0,
+      "annualized_volatility": 0.0,
+      "downside_deviation_annual": 0.0,
+      "max_drawdown": 0.0,
+      "var_95": 0.0,
+      "var_99": 0.0,
+      "cvar_95": 0.0,
+      "cvar_99": 0.0,
+      "sharpe_ratio": 0.0,
+      "sortino_ratio": 0.0,
+      "calmar_ratio": 0.0,
+      "omega_ratio": 0.0,
+      "win_rate": 0.0,
+      "best_day": 0.0,
+      "worst_day": 0.0,
+      "positive_days": 0,
+      "negative_days": 0,
+      "skewness": 0.0,
+      "kurtosis": 0.0
+    },
+    "relative": {
+      "beta": 0.0,
+      "alpha_annualized": -0.229662,
+      "r_squared": null,
+      "correlation": null,
+      "treynor_ratio_portfolio": 0.0,
+      "treynor_ratio_benchmark": 0.0,
+      "information_ratio": -0.7641,
+      "tracking_error": 0.189162,
+      "upside_capture": 0.0,
+      "downside_capture": 0.0,
+      "capture_ratio": 0.0,
+      "excess_return": -0.019786,
+      "excess_volatility": 0.189162
+    }
+  },
+  "rolling_metrics": {
+    "window_30d": {
+      "timeseries": [
+        {
+          "date": "2026-04-05",
+          "sharpe_ratio": -1.2745,
+          "volatility": 0.193057,
+          "beta": 0,
+          "correlation": null
+        },
+        {
+          "date": "2026-04-06",
+          "sharpe_ratio": -0.8343,
+          "volatility": 0.195569,
+          "beta": 0,
+          "correlation": null
+        }
+      ],
+      "current": {
+        "sharpe_ratio": -0.8343,
+        "volatility": 0.195569,
+        "beta": 0,
+        "correlation": null
+      }
+    },
+    "window_60d": {
+      "timeseries": [],
+      "current": null
+    },
+    "window_90d": {
+      "timeseries": [],
+      "current": null
+    }
+  },
+  "drawdown_analysis": {
+    "portfolio": {
+      "current_drawdown": -0.029433,
+      "at_peak": false,
+      "max_drawdown": -0.085757,
+      "num_underwater_periods": 1,
+      "avg_duration_days": 26.0,
+      "max_duration_days": 26,
+      "total_days_underwater": 26,
+      "avg_recovery_days": null,
+      "max_recovery_days": null
+    },
+    "benchmark": {
+      "current_drawdown": 0.0,
+      "at_peak": true,
+      "max_drawdown": 0.0,
+      "num_underwater_periods": 0,
+      "avg_duration_days": 0,
+      "max_duration_days": 0,
+      "total_days_underwater": 0,
+      "avg_recovery_days": null,
+      "max_recovery_days": null
+    },
+    "timeseries": [
+      {
+        "date": "2026-03-07",
+        "portfolio_drawdown": 0.0,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": null,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-08",
+        "portfolio_drawdown": 0.0,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": null,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-09",
+        "portfolio_drawdown": 0.0,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": null,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-10",
+        "portfolio_drawdown": 0.0,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": null,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-11",
+        "portfolio_drawdown": -0.001125,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-12",
+        "portfolio_drawdown": -0.015704,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-13",
+        "portfolio_drawdown": -0.028159,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-14",
+        "portfolio_drawdown": -0.028159,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-15",
+        "portfolio_drawdown": -0.028159,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-16",
+        "portfolio_drawdown": -0.015453,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-17",
+        "portfolio_drawdown": -0.00596,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-18",
+        "portfolio_drawdown": -0.023565,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-19",
+        "portfolio_drawdown": -0.027938,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-20",
+        "portfolio_drawdown": -0.04222,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-21",
+        "portfolio_drawdown": -0.04222,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-22",
+        "portfolio_drawdown": -0.04222,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-23",
+        "portfolio_drawdown": -0.031754,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-24",
+        "portfolio_drawdown": -0.050829,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-25",
+        "portfolio_drawdown": -0.045319,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-26",
+        "portfolio_drawdown": -0.061276,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-27",
+        "portfolio_drawdown": -0.085757,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-28",
+        "portfolio_drawdown": -0.085757,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-29",
+        "portfolio_drawdown": -0.085757,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-30",
+        "portfolio_drawdown": -0.085345,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-03-31",
+        "portfolio_drawdown": -0.051511,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-01",
+        "portfolio_drawdown": -0.039398,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-02",
+        "portfolio_drawdown": -0.038917,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-03",
+        "portfolio_drawdown": -0.038917,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-04",
+        "portfolio_drawdown": -0.038917,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-05",
+        "portfolio_drawdown": -0.038917,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      },
+      {
+        "date": "2026-04-06",
+        "portfolio_drawdown": -0.029433,
+        "benchmark_drawdown": 0.0,
+        "portfolio_episode": 1,
+        "benchmark_episode": null
+      }
+    ],
+    "episode_details": {
+      "portfolio": [
+        {
+          "episode": 1,
+          "start_date": "2026-03-11",
+          "trough_date": "2026-03-27",
+          "end_date": null,
+          "max_drawdown": -0.085757,
+          "duration_days": 26,
+          "recovery_days": null,
+          "recovered": false
+        }
+      ],
+      "benchmark": []
+    }
+  },
+  "portfolio_scores": {
+    "value": 32,
+    "quality": 97,
+    "momentum": 47,
+    "defensive": 87,
+    "tactical": 61,
+    "total": 49,
+    "coverage": 1.0
+  },
+  "concentration_metrics": {
+    "weight_statistics": {
+      "mean": 0.25,
+      "median": 0.255489,
+      "std_dev": 0.011672,
+      "maximum": 0.256478,
+      "minimum": 0.232545
+    },
+    "concentration": {
+      "herfindahl_index": 0.2504,
+      "effective_positions": 3.99,
+      "top_5_share": 1.0,
+      "top_10_share": 1.0,
+      "gini_coefficient": 0.0184
+    },
+    "higher_moments": {
+      "skewness": -1.1345,
+      "kurtosis": -0.6833
+    },
+    "diversification": {
+      "num_markets": 1,
+      "market_hhi": 1.0,
+      "num_sectors": 2,
+      "sector_hhi": 0.6205,
+      "num_industries": 4
+    }
+  },
+  "transactions": [
+    {
+      "date": "2026-03-07",
+      "ric": "AAPL.O",
+      "market": "United States",
+      "transaction_qty": 9.7102,
+      "transaction_value": 2500.0,
+      "transaction_cost": 0.0,
+      "transaction_cost_rate": 0.0,
+      "transaction_gross_value": 0.0,
+      "transaction_net_value": 0.0,
+      "close_base": 257.46,
+      "close_local": 257.46,
+      "local_per_base": 1.0,
+      "currency_local": "USD",
+      "transaction_type": "BUY"
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "AMZN.O",
+      "market": "United States",
+      "transaction_qty": 11.7255,
+      "transaction_value": 2500.0,
+      "transaction_cost": 0.0,
+      "transaction_cost_rate": 0.0,
+      "transaction_gross_value": 0.0,
+      "transaction_net_value": 0.0,
+      "close_base": 213.21,
+      "close_local": 213.21,
+      "local_per_base": 1.0,
+      "currency_local": "USD",
+      "transaction_type": "BUY"
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "GOOGL.O",
+      "market": "United States",
+      "transaction_qty": 8.3746,
+      "transaction_value": 2500.0,
+      "transaction_cost": 0.0,
+      "transaction_cost_rate": 0.0,
+      "transaction_gross_value": 0.0,
+      "transaction_net_value": 0.0,
+      "close_base": 298.52,
+      "close_local": 298.52,
+      "local_per_base": 1.0,
+      "currency_local": "USD",
+      "transaction_type": "BUY"
+    },
+    {
+      "date": "2026-03-07",
+      "ric": "MSFT.O",
+      "market": "United States",
+      "transaction_qty": 6.1131,
+      "transaction_value": 2500.0,
+      "transaction_cost": 0.0,
+      "transaction_cost_rate": 0.0,
+      "transaction_gross_value": 0.0,
+      "transaction_net_value": 0.0,
+      "close_base": 408.96,
+      "close_local": 408.96,
+      "local_per_base": 1.0,
+      "currency_local": "USD",
+      "transaction_type": "BUY"
+    }
+  ],
+  "company_info": [
+    {
+      "ric": "AAPL.O",
+      "name": "Apple Inc",
+      "activity": "Active",
+      "market": "United States",
+      "exchange": "NASDAQ",
+      "exchangecode": "NAS",
+      "sector": "Technology",
+      "industry": "Phones & Handheld Devices",
+      "currency": "USD",
+      "close": 258.86011,
+      "changepercent": 1.1488306499,
+      "change": 2.94011,
+      "volume": 29329911.0,
+      "mktcap": 3800361515325.4004,
+      "numshrs": 14681140000.0,
+      "pick_toscore": true,
+      "value": 2.0,
+      "quality": 10.0,
+      "momentum": 5.897913189,
+      "defensive": 9.5,
+      "tactical": 8.5,
+      "total": 4.5,
+      "recommendation": "HOLD",
+      "description": "Apple Inc. designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services. Its product categories include iPhone, Mac, iPad, and Wearables, Home and Accessories. Its software platforms include iOS, iPadOS, macOS, watchOS, visionOS, and tvOS. Its services include advertising, AppleCare, cloud services, digital content and payment services. The Company operates various platforms, including the App Store, that allow customers to discover and download applications and digital content, such as books, music, video, games and podcasts. It also offers digital content through subscription-based services, including Apple Arcade, Apple Fitness+, Apple Music, Apple News+, and Apple TV+. Its products include iPhone 16 Pro, iPhone 16, iPhone 15, iPhone 14, iPhone SE, MacBook Air, MacBook Pro, iMac, Mac mini, Mac Studio, Mac Pro, iPad Pro, iPad Air, AirPods, AirPods Pro, AirPods Max, Apple TV and Apple Vision Pro.",
+      "type": "EQ"
+    },
+    {
+      "ric": "AMZN.O",
+      "name": "Amazon.com Inc",
+      "activity": "Active",
+      "market": "United States",
+      "exchange": "NASDAQ",
+      "exchangecode": "NAS",
+      "sector": "Consumer Cyclicals",
+      "industry": "Department Stores",
+      "currency": "USD",
+      "close": 212.79,
+      "changepercent": 1.4396695489,
+      "change": 3.01999,
+      "volume": 25385497.0,
+      "mktcap": 2284283811927.3,
+      "numshrs": 10734920870.0,
+      "pick_toscore": true,
+      "value": 4.0,
+      "quality": 9.0,
+      "momentum": 2.827295492,
+      "defensive": 8.5,
+      "tactical": 4.5,
+      "total": 3.3,
+      "recommendation": "SELL",
+      "description": "Amazon.com, Inc. provides a range of products and services to customers. The products offered through its stores include merchandise and content it has purchased for resale and products offered by third-party sellers. The Company\u2019s segments include North America, International and Amazon Web Services (AWS). It serves consumers through its online and physical stores and focuses on selection, price, and convenience. Customers access its offerings through its websites, mobile apps, Alexa, devices, streaming, and physically visiting its stores. It also manufactures and sells electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and develops and produces media content. It serves developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.",
+      "type": "EQ"
+    },
+    {
+      "ric": "GOOGL.O",
+      "name": "Alphabet Inc",
+      "activity": "Active",
+      "market": "United States",
+      "exchange": "NASDAQ",
+      "exchangecode": "NAS",
+      "sector": "Technology",
+      "industry": "Online Services",
+      "currency": "USD",
+      "close": 299.99,
+      "changepercent": 1.4267693787,
+      "change": 4.21998,
+      "volume": 16945493.0,
+      "mktcap": 1746541780000.0,
+      "numshrs": 5822000000.0,
+      "pick_toscore": true,
+      "value": 3.5,
+      "quality": 10.0,
+      "momentum": 7.67721202,
+      "defensive": 9.0,
+      "tactical": 4.5,
+      "total": 8.2,
+      "recommendation": "BUY",
+      "description": "Alphabet Inc. is a holding company. The Company's segments include Google Services, Google Cloud, and Other Bets. The Google Services segment includes products and services such as ads, Android, Chrome, devices, Google Maps, Google Play, Search, and YouTube. The Google Cloud segment includes infrastructure and platform services, collaboration tools, and other services for enterprise customers. Its Other Bets segment is engaged in the sale of healthcare-related services and Internet services. Its Google Cloud provides enterprise-ready cloud services, including Google Cloud Platform and Google Workspace. Google Cloud Platform provides access to solutions such as artificial intelligence (AI) offerings, including its AI infrastructure, Vertex AI platform, and Gemini for Google Cloud; cybersecurity, and data and analytics. Google Workspace includes cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet.",
+      "type": "EQ"
+    },
+    {
+      "ric": "MSFT.O",
+      "name": "Microsoft Corp",
+      "activity": "Active",
+      "market": "United States",
+      "exchange": "NASDAQ",
+      "exchangecode": "NAS",
+      "sector": "Technology",
+      "industry": "Software",
+      "currency": "USD",
+      "close": 372.87989,
+      "changepercent": -0.155323194,
+      "change": -0.58008,
+      "volume": 16146571.0,
+      "mktcap": 2768867753039.6816,
+      "numshrs": 7425629076.0,
+      "pick_toscore": true,
+      "value": 3.5,
+      "quality": 10.0,
+      "momentum": 2.442070117,
+      "defensive": 8.0,
+      "tactical": 7.0,
+      "total": 3.6,
+      "recommendation": "HOLD",
+      "description": "Microsoft Corporation is a technology company. The Company develops and supports software, services, devices, and solutions. The Company\u2019s segments include Productivity and Business Processes, Intelligent Cloud, and More Personal Computing. The Productivity and Business Processes segment consists of products and services in its portfolio of productivity, communication, and information services. This segment primarily comprises: Office Commercial, Office Consumer, LinkedIn, and Dynamics business solutions. The Intelligent Cloud segment consists of server products and cloud services, including Azure and other cloud services, SQL Server, Windows Server, Visual Studio, System Center, and related Client Access Licenses (CALs), and Nuance and GitHub; and Enterprise Services, including enterprise support services, industry solutions and Nuance professional services. The More Personal Computing segment primarily comprises Windows, Devices, Gaming, and search and news advertising.",
+      "type": "EQ"
+    }
+  ],
+  "latest_holdings": [
+    {
+      "ric": "AAPL.O",
+      "quantity": 9.7102,
+      "weight": 0.256433,
+      "close_local": 258.8601,
+      "close_base": 258.8601,
+      "currency_local": "USD",
+      "ending_value": 2513.5955,
+      "market": "United States",
+      "sector": "Technology",
+      "industry": "Phones & Handheld Devices",
+      "name": "Apple Inc",
+      "value": 2.0,
+      "quality": 10.0,
+      "momentum": 5.9,
+      "defensive": 9.5,
+      "tactical": 8.5,
+      "total": 4.5,
+      "pick_toscore": true,
+      "recommendation": "HOLD"
+    },
+    {
+      "ric": "AMZN.O",
+      "quantity": 11.7255,
+      "weight": 0.254544,
+      "close_local": 212.79,
+      "close_base": 212.79,
+      "currency_local": "USD",
+      "ending_value": 2495.0752,
+      "market": "United States",
+      "sector": "Consumer Cyclicals",
+      "industry": "Department Stores",
+      "name": "Amazon.com Inc",
+      "value": 4.0,
+      "quality": 9.0,
+      "momentum": 2.83,
+      "defensive": 8.5,
+      "tactical": 4.5,
+      "total": 3.3,
+      "pick_toscore": true,
+      "recommendation": "SELL"
+    },
+    {
+      "ric": "GOOGL.O",
+      "quantity": 8.3746,
+      "weight": 0.256478,
+      "close_local": 299.99,
+      "close_base": 299.99,
+      "currency_local": "USD",
+      "ending_value": 2514.0322,
+      "market": "United States",
+      "sector": "Technology",
+      "industry": "Online Services",
+      "name": "Alphabet Inc",
+      "value": 3.5,
+      "quality": 10.0,
+      "momentum": 7.68,
+      "defensive": 9.0,
+      "tactical": 4.5,
+      "total": 8.2,
+      "pick_toscore": true,
+      "recommendation": "BUY"
+    },
+    {
+      "ric": "MSFT.O",
+      "quantity": 6.1131,
+      "weight": 0.232545,
+      "close_local": 372.8799,
+      "close_base": 372.8799,
+      "currency_local": "USD",
+      "ending_value": 2279.4401,
+      "market": "United States",
+      "sector": "Technology",
+      "industry": "Software",
+      "name": "Microsoft Corp",
+      "value": 3.5,
+      "quality": 10.0,
+      "momentum": 2.44,
+      "defensive": 8.0,
+      "tactical": 7.0,
+      "total": 3.6,
+      "pick_toscore": true,
+      "recommendation": "HOLD"
+    }
+  ],
+  "market_allocation": [
+    {
+      "date": "2026-03-07",
+      "market": "United States",
+      "value": 10000.0,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-08",
+      "market": "United States",
+      "value": 10000.0,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-09",
+      "market": "United States",
+      "value": 10096.9479,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-10",
+      "market": "United States",
+      "value": 10099.4099,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-11",
+      "market": "United States",
+      "value": 10088.0469,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-12",
+      "market": "United States",
+      "value": 9940.8081,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-13",
+      "market": "United States",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-14",
+      "market": "United States",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-15",
+      "market": "United States",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-16",
+      "market": "United States",
+      "value": 9943.3406,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-17",
+      "market": "United States",
+      "value": 10039.2191,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-18",
+      "market": "United States",
+      "value": 9861.4168,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-19",
+      "market": "United States",
+      "value": 9817.2576,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-20",
+      "market": "United States",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-21",
+      "market": "United States",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-22",
+      "market": "United States",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-23",
+      "market": "United States",
+      "value": 9778.7184,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-24",
+      "market": "United States",
+      "value": 9586.0693,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-25",
+      "market": "United States",
+      "value": 9641.7125,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-26",
+      "market": "United States",
+      "value": 9480.5572,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-27",
+      "market": "United States",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-28",
+      "market": "United States",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-29",
+      "market": "United States",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-30",
+      "market": "United States",
+      "value": 9237.4652,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-31",
+      "market": "United States",
+      "value": 9579.1783,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "market": "United States",
+      "value": 9701.5012,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-02",
+      "market": "United States",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-03",
+      "market": "United States",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-04",
+      "market": "United States",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-05",
+      "market": "United States",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-06",
+      "market": "United States",
+      "value": 9802.1429,
+      "weight": 1.0
+    }
+  ],
+  "sector_allocation": [
+    {
+      "date": "2026-03-07",
+      "sector": "Consumer Cyclicals",
+      "value": 2500.0,
+      "weight": 0.25
+    },
+    {
+      "date": "2026-03-07",
+      "sector": "Technology",
+      "value": 7500.0,
+      "weight": 0.75
+    },
+    {
+      "date": "2026-03-08",
+      "sector": "Consumer Cyclicals",
+      "value": 2500.0,
+      "weight": 0.25
+    },
+    {
+      "date": "2026-03-08",
+      "sector": "Technology",
+      "value": 7500.0,
+      "weight": 0.75
+    },
+    {
+      "date": "2026-03-09",
+      "sector": "Consumer Cyclicals",
+      "value": 2503.2829,
+      "weight": 0.247925
+    },
+    {
+      "date": "2026-03-09",
+      "sector": "Technology",
+      "value": 7593.665,
+      "weight": 0.752075
+    },
+    {
+      "date": "2026-03-10",
+      "sector": "Consumer Cyclicals",
+      "value": 2513.1324,
+      "weight": 0.24884
+    },
+    {
+      "date": "2026-03-10",
+      "sector": "Technology",
+      "value": 7586.2775,
+      "weight": 0.75116
+    },
+    {
+      "date": "2026-03-11",
+      "sector": "Consumer Cyclicals",
+      "value": 2493.4334,
+      "weight": 0.247167
+    },
+    {
+      "date": "2026-03-11",
+      "sector": "Technology",
+      "value": 7594.6135,
+      "weight": 0.752833
+    },
+    {
+      "date": "2026-03-12",
+      "sector": "Consumer Cyclicals",
+      "value": 2456.8499,
+      "weight": 0.247148
+    },
+    {
+      "date": "2026-03-12",
+      "sector": "Technology",
+      "value": 7483.9582,
+      "weight": 0.752852
+    },
+    {
+      "date": "2026-03-13",
+      "sector": "Consumer Cyclicals",
+      "value": 2435.0405,
+      "weight": 0.248093
+    },
+    {
+      "date": "2026-03-13",
+      "sector": "Technology",
+      "value": 7379.9747,
+      "weight": 0.751907
+    },
+    {
+      "date": "2026-03-14",
+      "sector": "Consumer Cyclicals",
+      "value": 2435.0405,
+      "weight": 0.248093
+    },
+    {
+      "date": "2026-03-14",
+      "sector": "Technology",
+      "value": 7379.9747,
+      "weight": 0.751907
+    },
+    {
+      "date": "2026-03-15",
+      "sector": "Consumer Cyclicals",
+      "value": 2435.0405,
+      "weight": 0.248093
+    },
+    {
+      "date": "2026-03-15",
+      "sector": "Technology",
+      "value": 7379.9747,
+      "weight": 0.751907
+    },
+    {
+      "date": "2026-03-16",
+      "sector": "Consumer Cyclicals",
+      "value": 2482.7631,
+      "weight": 0.249691
+    },
+    {
+      "date": "2026-03-16",
+      "sector": "Technology",
+      "value": 7460.5775,
+      "weight": 0.750309
+    },
+    {
+      "date": "2026-03-17",
+      "sector": "Consumer Cyclicals",
+      "value": 2523.3335,
+      "weight": 0.251348
+    },
+    {
+      "date": "2026-03-17",
+      "sector": "Technology",
+      "value": 7515.8856,
+      "weight": 0.748652
+    },
+    {
+      "date": "2026-03-18",
+      "sector": "Consumer Cyclicals",
+      "value": 2460.8368,
+      "weight": 0.249542
+    },
+    {
+      "date": "2026-03-18",
+      "sector": "Technology",
+      "value": 7400.58,
+      "weight": 0.750458
+    },
+    {
+      "date": "2026-03-19",
+      "sector": "Consumer Cyclicals",
+      "value": 2447.8213,
+      "weight": 0.249339
+    },
+    {
+      "date": "2026-03-19",
+      "sector": "Technology",
+      "value": 7369.4363,
+      "weight": 0.750661
+    },
+    {
+      "date": "2026-03-20",
+      "sector": "Consumer Cyclicals",
+      "value": 2408.0718,
+      "weight": 0.248947
+    },
+    {
+      "date": "2026-03-20",
+      "sector": "Technology",
+      "value": 7264.9391,
+      "weight": 0.751053
+    },
+    {
+      "date": "2026-03-21",
+      "sector": "Consumer Cyclicals",
+      "value": 2408.0718,
+      "weight": 0.248947
+    },
+    {
+      "date": "2026-03-21",
+      "sector": "Technology",
+      "value": 7264.9391,
+      "weight": 0.751053
+    },
+    {
+      "date": "2026-03-22",
+      "sector": "Consumer Cyclicals",
+      "value": 2408.0718,
+      "weight": 0.248947
+    },
+    {
+      "date": "2026-03-22",
+      "sector": "Technology",
+      "value": 7264.9391,
+      "weight": 0.751053
+    },
+    {
+      "date": "2026-03-23",
+      "sector": "Consumer Cyclicals",
+      "value": 2464.0027,
+      "weight": 0.251976
+    },
+    {
+      "date": "2026-03-23",
+      "sector": "Technology",
+      "value": 7314.7157,
+      "weight": 0.748024
+    },
+    {
+      "date": "2026-03-24",
+      "sector": "Consumer Cyclicals",
+      "value": 2429.9981,
+      "weight": 0.253493
+    },
+    {
+      "date": "2026-03-24",
+      "sector": "Technology",
+      "value": 7156.0712,
+      "weight": 0.746507
+    },
+    {
+      "date": "2026-03-25",
+      "sector": "Consumer Cyclicals",
+      "value": 2482.4114,
+      "weight": 0.257466
+    },
+    {
+      "date": "2026-03-25",
+      "sector": "Technology",
+      "value": 7159.301,
+      "weight": 0.742534
+    },
+    {
+      "date": "2026-03-26",
+      "sector": "Consumer Cyclicals",
+      "value": 2433.5157,
+      "weight": 0.256685
+    },
+    {
+      "date": "2026-03-26",
+      "sector": "Technology",
+      "value": 7047.0415,
+      "weight": 0.743315
+    },
+    {
+      "date": "2026-03-27",
+      "sector": "Consumer Cyclicals",
+      "value": 2337.3666,
+      "weight": 0.253145
+    },
+    {
+      "date": "2026-03-27",
+      "sector": "Technology",
+      "value": 6895.9448,
+      "weight": 0.746855
+    },
+    {
+      "date": "2026-03-28",
+      "sector": "Consumer Cyclicals",
+      "value": 2337.3666,
+      "weight": 0.253145
+    },
+    {
+      "date": "2026-03-28",
+      "sector": "Technology",
+      "value": 6895.9448,
+      "weight": 0.746855
+    },
+    {
+      "date": "2026-03-29",
+      "sector": "Consumer Cyclicals",
+      "value": 2337.3666,
+      "weight": 0.253145
+    },
+    {
+      "date": "2026-03-29",
+      "sector": "Technology",
+      "value": 6895.9448,
+      "weight": 0.746855
+    },
+    {
+      "date": "2026-03-30",
+      "sector": "Consumer Cyclicals",
+      "value": 2356.2447,
+      "weight": 0.255075
+    },
+    {
+      "date": "2026-03-30",
+      "sector": "Technology",
+      "value": 6881.2206,
+      "weight": 0.744925
+    },
+    {
+      "date": "2026-03-31",
+      "sector": "Consumer Cyclicals",
+      "value": 2442.0756,
+      "weight": 0.254936
+    },
+    {
+      "date": "2026-03-31",
+      "sector": "Technology",
+      "value": 7137.1027,
+      "weight": 0.745064
+    },
+    {
+      "date": "2026-04-01",
+      "sector": "Consumer Cyclicals",
+      "value": 2469.0444,
+      "weight": 0.254501
+    },
+    {
+      "date": "2026-04-01",
+      "sector": "Technology",
+      "value": 7232.4568,
+      "weight": 0.745499
+    },
+    {
+      "date": "2026-04-02",
+      "sector": "Consumer Cyclicals",
+      "value": 2459.6642,
+      "weight": 0.253407
+    },
+    {
+      "date": "2026-04-02",
+      "sector": "Technology",
+      "value": 7246.6999,
+      "weight": 0.746593
+    },
+    {
+      "date": "2026-04-03",
+      "sector": "Consumer Cyclicals",
+      "value": 2459.6642,
+      "weight": 0.253407
+    },
+    {
+      "date": "2026-04-03",
+      "sector": "Technology",
+      "value": 7246.6999,
+      "weight": 0.746593
+    },
+    {
+      "date": "2026-04-04",
+      "sector": "Consumer Cyclicals",
+      "value": 2459.6642,
+      "weight": 0.253407
+    },
+    {
+      "date": "2026-04-04",
+      "sector": "Technology",
+      "value": 7246.6999,
+      "weight": 0.746593
+    },
+    {
+      "date": "2026-04-05",
+      "sector": "Consumer Cyclicals",
+      "value": 2459.6642,
+      "weight": 0.253407
+    },
+    {
+      "date": "2026-04-05",
+      "sector": "Technology",
+      "value": 7246.6999,
+      "weight": 0.746593
+    },
+    {
+      "date": "2026-04-06",
+      "sector": "Consumer Cyclicals",
+      "value": 2495.0752,
+      "weight": 0.254544
+    },
+    {
+      "date": "2026-04-06",
+      "sector": "Technology",
+      "value": 7307.0677,
+      "weight": 0.745456
+    }
+  ],
+  "currency_allocation": [
+    {
+      "date": "2026-03-07",
+      "currency": "USD",
+      "value": 10000.0,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-08",
+      "currency": "USD",
+      "value": 10000.0,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-09",
+      "currency": "USD",
+      "value": 10096.9479,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-10",
+      "currency": "USD",
+      "value": 10099.4099,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-11",
+      "currency": "USD",
+      "value": 10088.0469,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-12",
+      "currency": "USD",
+      "value": 9940.8081,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-13",
+      "currency": "USD",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-14",
+      "currency": "USD",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-15",
+      "currency": "USD",
+      "value": 9815.0152,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-16",
+      "currency": "USD",
+      "value": 9943.3406,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-17",
+      "currency": "USD",
+      "value": 10039.2191,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-18",
+      "currency": "USD",
+      "value": 9861.4168,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-19",
+      "currency": "USD",
+      "value": 9817.2576,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-20",
+      "currency": "USD",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-21",
+      "currency": "USD",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-22",
+      "currency": "USD",
+      "value": 9673.011,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-23",
+      "currency": "USD",
+      "value": 9778.7184,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-24",
+      "currency": "USD",
+      "value": 9586.0693,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-25",
+      "currency": "USD",
+      "value": 9641.7125,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-26",
+      "currency": "USD",
+      "value": 9480.5572,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-27",
+      "currency": "USD",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-28",
+      "currency": "USD",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-29",
+      "currency": "USD",
+      "value": 9233.3114,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-30",
+      "currency": "USD",
+      "value": 9237.4652,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-03-31",
+      "currency": "USD",
+      "value": 9579.1783,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-01",
+      "currency": "USD",
+      "value": 9701.5012,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-02",
+      "currency": "USD",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-03",
+      "currency": "USD",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-04",
+      "currency": "USD",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-05",
+      "currency": "USD",
+      "value": 9706.3641,
+      "weight": 1.0
+    },
+    {
+      "date": "2026-04-06",
+      "currency": "USD",
+      "value": 9802.1429,
+      "weight": 1.0
+    }
+  ],
+  "company_contribution": [
+    {
+      "ric": "AAPL.O",
+      "total_pl": 13.5955,
+      "avg_weight": 0.252639,
+      "contribution_pct": -0.068714,
+      "avg_allocation": 2526.3945,
+      "return_pct": 0.005381,
+      "name": "Apple Inc"
+    },
+    {
+      "ric": "AMZN.O",
+      "total_pl": -4.9248,
+      "avg_weight": 0.251415,
+      "contribution_pct": 0.024891,
+      "avg_allocation": 2514.1486,
+      "return_pct": -0.001959,
+      "name": "Amazon.com Inc"
+    },
+    {
+      "ric": "GOOGL.O",
+      "total_pl": 14.0322,
+      "avg_weight": 0.255298,
+      "contribution_pct": -0.070921,
+      "avg_allocation": 2552.9822,
+      "return_pct": 0.005496,
+      "name": "Alphabet Inc"
+    },
+    {
+      "ric": "MSFT.O",
+      "total_pl": -220.5599,
+      "avg_weight": 0.240647,
+      "contribution_pct": 1.114744,
+      "avg_allocation": 2406.4747,
+      "return_pct": -0.091653,
+      "name": "Microsoft Corp"
+    }
+  ],
+  "sector_contribution": [
+    {
+      "sector": "Consumer Cyclicals",
+      "total_pl": -4.9248,
+      "avg_weight": 0.251415,
+      "contribution_pct": 0.024891
+    },
+    {
+      "sector": "Technology",
+      "total_pl": -192.9323,
+      "avg_weight": 0.249528,
+      "contribution_pct": 0.975109
+    }
+  ],
+  "market_contribution": [
+    {
+      "market": "United States",
+      "total_pl": -197.8571,
+      "avg_weight": 0.25,
+      "contribution_pct": 1.0
+    }
+  ],
+  "time_period_returns": {
+    "inception": {
+      "portfolio_return": -0.019784,
+      "benchmark_return": 0.0,
+      "excess_return": -0.019784,
+      "num_days": 31
+    },
+    "ytd": {
+      "portfolio_return": -0.019784,
+      "benchmark_return": 0.0,
+      "excess_return": -0.019784,
+      "num_days": 31
+    },
+    "qtd": {
+      "portfolio_return": 0.023276,
+      "benchmark_return": 0.0,
+      "excess_return": 0.023276,
+      "num_days": 6
+    },
+    "mtd": {
+      "portfolio_return": 0.023276,
+      "benchmark_return": 0.0,
+      "excess_return": 0.023276,
+      "num_days": 6
+    },
+    "1w": {
+      "portfolio_return": 0.061607,
+      "benchmark_return": 0.0,
+      "excess_return": 0.061607,
+      "num_days": 8
+    },
+    "1m": {
+      "portfolio_return": -0.019784,
+      "benchmark_return": 0.0,
+      "excess_return": -0.019784,
+      "num_days": 31
+    },
+    "3m": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    },
+    "6m": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    },
+    "1yr": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    },
+    "3yr": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    },
+    "5yr": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    },
+    "10yr": {
+      "portfolio_return": null,
+      "benchmark_return": null,
+      "excess_return": null,
+      "num_days": null
+    }
+  },
+  "monthly_returns": [
+    {
+      "period": "2026-03",
+      "portfolio_return": -0.042081,
+      "benchmark_return": 0.0,
+      "excess_return": -0.042081,
+      "num_days": 25
+    },
+    {
+      "period": "2026-04",
+      "portfolio_return": 0.023276,
+      "benchmark_return": 0.0,
+      "excess_return": 0.023276,
+      "num_days": 6
+    }
+  ],
+  "annual_returns": [
+    {
+      "year": 2026,
+      "portfolio_return": -0.019784,
+      "benchmark_return": 0.0,
+      "excess_return": -0.019784,
+      "num_days": 31
+    }
+  ],
+  "benchmark_prices": [
+    {
+      "date": "2026-03-07",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-08",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-09",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-10",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-11",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-12",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-13",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-14",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-15",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-16",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-17",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-18",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-19",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-20",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-21",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-22",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-23",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-24",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-25",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-26",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-27",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-28",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-29",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-30",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-03-31",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-01",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-02",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-03",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-04",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-05",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    },
+    {
+      "date": "2026-04-06",
+      "ric": "SPY",
+      "close": null,
+      "changepercent": 0.0,
+      "currency_local": "USD",
+      "local_per_base": 1.0,
+      "close_base": null,
+      "value_base": 10000.0,
+      "daily_return_base": 0.0
+    }
+  ],
+  "daily_summary": [
+    {
+      "date": "2026-03-07",
+      "total_value_base": 10000.0,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": 0.0,
+      "is_rebalance_day": true,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-08",
+      "total_value_base": 10000.0,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": 0.0,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-09",
+      "total_value_base": 10096.9479,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.009695,
+      "cumulative_return": 0.009695,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-10",
+      "total_value_base": 10099.4099,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.000244,
+      "cumulative_return": 0.009941,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-11",
+      "total_value_base": 10088.0469,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.001125,
+      "cumulative_return": 0.008805,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-12",
+      "total_value_base": 9940.8081,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.014595,
+      "cumulative_return": -0.005919,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-13",
+      "total_value_base": 9815.0152,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.012654,
+      "cumulative_return": -0.018498,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-14",
+      "total_value_base": 9815.0152,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.018498,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-15",
+      "total_value_base": 9815.0152,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.018498,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-16",
+      "total_value_base": 9943.3406,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.013074,
+      "cumulative_return": -0.005666,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-17",
+      "total_value_base": 10039.2191,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.009642,
+      "cumulative_return": 0.003922,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-18",
+      "total_value_base": 9861.4168,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.017711,
+      "cumulative_return": -0.013858,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-19",
+      "total_value_base": 9817.2576,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.004478,
+      "cumulative_return": -0.018274,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-20",
+      "total_value_base": 9673.011,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.014693,
+      "cumulative_return": -0.032699,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-21",
+      "total_value_base": 9673.011,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.032699,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-22",
+      "total_value_base": 9673.011,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.032699,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-23",
+      "total_value_base": 9778.7184,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.010928,
+      "cumulative_return": -0.022128,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-24",
+      "total_value_base": 9586.0693,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.019701,
+      "cumulative_return": -0.041393,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-25",
+      "total_value_base": 9641.7125,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.005805,
+      "cumulative_return": -0.035829,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-26",
+      "total_value_base": 9480.5572,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.016714,
+      "cumulative_return": -0.051944,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-27",
+      "total_value_base": 9233.3114,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": -0.026079,
+      "cumulative_return": -0.076669,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-28",
+      "total_value_base": 9233.3114,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.076669,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-29",
+      "total_value_base": 9233.3114,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.076669,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-30",
+      "total_value_base": 9237.4652,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.00045,
+      "cumulative_return": -0.076253,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-03-31",
+      "total_value_base": 9579.1783,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.036992,
+      "cumulative_return": -0.042082,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-01",
+      "total_value_base": 9701.5012,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.01277,
+      "cumulative_return": -0.02985,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-02",
+      "total_value_base": 9706.3641,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.000501,
+      "cumulative_return": -0.029364,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-03",
+      "total_value_base": 9706.3641,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.029364,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-04",
+      "total_value_base": 9706.3641,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.029364,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-05",
+      "total_value_base": 9706.3641,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.0,
+      "cumulative_return": -0.029364,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    },
+    {
+      "date": "2026-04-06",
+      "total_value_base": 9802.1429,
+      "num_positions": 4,
+      "sum_weights": 1.0,
+      "daily_return": 0.009868,
+      "cumulative_return": -0.019786,
+      "is_rebalance_day": false,
+      "rf_rate_daily": 5.479e-05,
+      "benchmark_value_base": 10000.0,
+      "benchmark_daily_return": 0.0,
+      "benchmark_cumulative_return": 0.0
+    }
+  ]
+}

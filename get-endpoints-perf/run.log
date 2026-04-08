@@ -1,0 +1,13 @@
+fetch_p50: 0.39
+fetch_p99: 1.04
+fetch_max: 1.04
+fetch_over_target: 3
+fetch_slow: divyield-history 1.02s
+fetch_slow: peers 1.04s
+fetch_slow: etf-profile 0.56s
+calc_p50: 0.60
+calc_p99: 0.82
+calc_max: 0.82
+calc_over_target: 0
+total_over_target: 3
+status: success
