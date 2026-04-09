@@ -1,0 +1,967 @@
+{
+  "timestamp": "2026-04-08T09:25:47+00:00",
+  "model": "openai/gpt-4o-mini",
+  "resolved_model": "openai/gpt-4o-mini",
+  "temperature": 0.0,
+  "prompt_tag": "temp00",
+  "system_prompt": "You are a senior financial analyst at Goldman Sachs providing comprehensive investment analysis using Krishna Palepu's framework. Analyze company data and provide a detailed assessment. Do not fabricate numbers, using wrong numbers can lead to a catastrophic error and undermine credibility.",
+  "samples": 20,
+  "accuracy_pct": 91.74757281553399,
+  "hc_accuracy_pct": 94.66019417475728,
+  "total_claims": 240,
+  "verified_correct": 189,
+  "errors": 16,
+  "hc_errors": 10,
+  "lc_errors": 6,
+  "warnings": 1,
+  "unverifiable": 34,
+  "verification_rate_pct": 85.83333333333333,
+  "avg_claims_per_response": 12.0,
+  "parse_errors": 0,
+  "api_errors": 0,
+  "avg_latency_ms": 24900.623548030853,
+  "p50_latency_ms": 24552.047967910767,
+  "p95_latency_ms": 42476.049184799194,
+  "total_tokens_in": 120690,
+  "total_tokens_out": 20954,
+  "json_valid_pct": 100.0,
+  "schema_complete_pct": 100.0,
+  "status": "success",
+  "results": [
+    {
+      "sample_id": "bc05508e-4eeb-4072-a56b-d3502b11a65e",
+      "symbol": "THC",
+      "accuracy": {
+        "symbol": "THC",
+        "parse_error": false,
+        "total_claims": 11,
+        "verified_correct": 9,
+        "errors": 2,
+        "warnings": 0,
+        "unverifiable": 0,
+        "hc_errors": 2,
+        "lc_errors": 0,
+        "accuracy_pct": 81.8,
+        "hc_accuracy_pct": 81.8,
+        "error_details": [
+          {
+            "claim_text": "me increased significantly to $4.06B in 2024 f",
+            "metric": "net_income",
+            "value": 4.06,
+            "unit_char": "B",
+            "year": "2024",
+            "unit": "dollars",
+            "context_field": "detailedAnalysis.financialPerformance.profitabilityAnalysis.profitabilityTrends",
+            "expected": 3200.0,
+            "computed": 4059.9999999999995,
+            "source": "income_statement.net_income[2024]",
+            "verdict": "error",
+            "deviation_pct": 26.87
+          },
+          {
+            "claim_text": "cantly to $4.06B in 2024 from $1.31B in 2023,",
+            "metric": "net_income",
+            "value": 1.31,
+            "unit_char": "B",
+            "year": "2023",
+            "unit": "dollars",
+            "context_field": "detailedAnalysis.financialPerformance.profitabilityAnalysis.profitabilityTrends",
+            "expected": 914.0,
+            "computed": 1310.0,
+            "source": "income_statement.net_income[2021]",
+            "verdict": "error",
+            "deviation_pct": 43.33
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4976
+      },
+      "latency_ms": 17649.489879608154,
+      "tokens_in": 6158,
+      "tokens_out": 979,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Tenet Healthcare Corp demonstrates strong profitability and improving financial health, making it a compelling investment opportunity. The company's strategic positioning in the healthcare sector, coupled with robust operational metrics, supports a positive outlook for future growth.\",\n        \"keyHighlights\": [\n            \"Tenet's ROE has significantly improved to 110.75%, indicating exceptional profitability relative to equity, driven by strong net income growth.\",\n            \"The current ratio of 1.78 and quick ratio of 1.7 suggest solid short-term liquidity, enhancing the company's ability to meet its obligations.\",\n            \"Despite a recent decline in revenues, the gross margin remains high at 82.35%, reflecting effective cost management and pricing power.\"\n        ],\n        \"recommendedAction\": \"BUY\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"$200 - $220 based on P/E and growth projections.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\"High non-cash items impacting net income\", \"Significant unusual expenses in 2024\"],\n            \"conservatismLevel\": \"Moderate, with some aggressive accounting practices evident in revenue recognition.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\"Revenue recognition policies may impact reported income; unusual expenses should be monitored closely.\"]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Tenet operates in a competitive healthcare landscape with a diversified service offering, positioning it well against peers.\",\n            \"competitiveAdvantage\": \"Strong brand recognition and extensive network of facilities provide a sustainable competitive advantage.\",\n            \"businessModel\": \"The dual-segment model (Hospital Operations and Ambulatory Care) enhances revenue stability and growth potential.\",\n            \"keyRisks\": [\"Regulatory changes in healthcare\", \"Market competition from other healthcare providers\", \"Economic downturns affecting patient volumes\"]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover is approximately 0.71, indicating effective use of assets to generate revenue.\",\n                \"operationalEfficiency\": \"Operating margin improved to 28.78%, showcasing enhanced operational efficiency.\",\n                \"managementEffectiveness\": \"Management has effectively reduced total liabilities, improving the debt-to-equity ratio from 9.33 to 3.16 over three years.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.78 and quick ratio of 1.7 indicate strong liquidity position.\",\n                \"workingCapitalAnalysis\": \"Working capital management is effective, with a cash conversion cycle of -36 days, indicating efficient cash flow management.\",\n                \"cashFlowQuality\": \"Cash from operating activities of $2.05B reflects strong cash generation capabilities.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 110.75% is driven by a net margin of 19.67% and an equity multiplier of 6.94.\",\n                \"profitabilityTrends\": \"Net income increased significantly to $4.06B in 2024 from $1.31B in 2023, indicating strong growth.\",\n                \"marginAnalysis\": \"Gross margin remains stable at 82.35%, while net margin has improved significantly, reflecting better cost control.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt decreased to $13.17B, with a debt-to-equity ratio of 3.16, indicating improved leverage.\",\n                \"coverageRatios\": \"Interest coverage ratio improved to 7.2, suggesting strong ability to cover interest expenses.\",\n                \"financialFlexibility\": \"The reduction in long-term debt to total capital ratio to 0.6023 indicates enhanced financial flexibility.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is supported by a strong operational base and potential for revenue growth in the ambulatory care segment.\",\n            \"growthProspects\": \"Revenue per share is projected to grow at a CAGR of 3.39%, indicating sustainable growth potential.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 5% CAGR, leading to higher net income and improved margins.\",\n                \"Base case: Revenue growth stabilizes at 3.39% CAGR, maintaining current profitability levels.\",\n                \"Bear case: Revenue declines by 2% due to market pressures, impacting net income and margins.\"\n            ],\n            \"valuationAssessment\": \"Using a P/E ratio of 12.84, the target price range of $200 - $220 is justified based on projected earnings growth.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "fe2ec8b3-52a6-42ce-a9e2-5dcebfa3b29f",
+      "symbol": "1109.HK",
+      "accuracy": {
+        "symbol": "1109.HK",
+        "parse_error": false,
+        "total_claims": 17,
+        "verified_correct": 14,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 3,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5990
+      },
+      "latency_ms": 24552.047967910767,
+      "tokens_in": 6149,
+      "tokens_out": 1222,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"China Resources Land Ltd is currently facing challenges with declining net income and profitability margins, but its strong asset base and low valuation metrics suggest potential for recovery. The company's strategic positioning in the real estate sector, combined with a solid dividend yield, makes it a candidate for a HOLD recommendation.\",\n        \"keyHighlights\": [\n            \"Despite a revenue increase of 11% in 2024, net income decreased by 18%, indicating potential issues with cost management and profitability.\",\n            \"The P/E ratio of 7.16 and P/B ratio of 0.71 suggest that the stock is undervalued compared to its peers, which may attract value investors.\",\n            \"The company has a strong current ratio of 1.41, indicating good short-term liquidity, but the quick ratio of 0.53 raises concerns about immediate cash availability.\",\n            \"The decline in net margin from 17.63% in 2021 to 12.08% in 2024 highlights a concerning trend in profitability that needs to be addressed.\",\n            \"The dividend yield of 4.69% provides a steady income stream for investors, despite the recent decline in net income.\"\n        ],\n        \"recommendedAction\": \"HOLD\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"Target price range of HKD 30.00 to HKD 35.00 based on current valuation metrics and potential recovery in profitability.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\"Declining net income raises concerns about earnings quality.\", \"High levels of inventory may indicate potential overvaluation of assets.\"],\n            \"conservatismLevel\": \"The accounting practices appear conservative, with no aggressive revenue recognition policies identified.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\"Revenue recognition primarily based on completed sales, which is standard in the real estate industry.\"]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"China Resources Land operates in a competitive real estate market in China, facing challenges from regulatory changes and market saturation.\",\n            \"competitiveAdvantage\": \"The company's extensive portfolio of investment properties provides a competitive edge, but reliance on property sales exposes it to market volatility.\",\n            \"businessModel\": \"The business model is diversified across development, investment, and management, but profitability pressures in the development segment are a vulnerability.\",\n            \"keyRisks\": [\"Regulatory changes affecting real estate development.\", \"Economic downturns impacting property sales and rental income.\"]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover ratio is approximately 0.25 (calculated as total revenue of RMB 278.8B / total assets of RMB 1128.39B), indicating moderate efficiency in asset use.\",\n                \"operationalEfficiency\": \"Operating margin has declined from 27.09% in 2021 to 21.89% in 2024, reflecting reduced operational efficiency.\",\n                \"managementEffectiveness\": \"Return on equity (ROE) has decreased from 15.07% in 2021 to 9.52% in 2024, indicating declining management effectiveness.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.41 and quick ratio of 0.53 suggest adequate liquidity but potential issues with immediate cash availability.\",\n                \"workingCapitalAnalysis\": \"The cash conversion cycle is lengthy at 786 days, indicating inefficiencies in working capital management.\",\n                \"cashFlowQuality\": \"Cash from operating activities is strong at RMB 46.59B, but the quality of earnings is impacted by declining net income.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 9.52% is driven by a net margin of 12.08% and an equity multiplier of 4.14, indicating high financial leverage.\",\n                \"profitabilityTrends\": \"Net margin has decreased from 17.63% in 2021 to 12.08% in 2024, highlighting a concerning trend in profitability.\",\n                \"marginAnalysis\": \"Gross margin has declined from 26.97% in 2021 to 21.64% in 2024, indicating increasing cost pressures.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Debt-to-equity ratio is 1.06, indicating a balanced approach to leverage, but total debt has increased significantly over the years.\",\n                \"coverageRatios\": \"Interest coverage ratio (EBIT/Interest Expense) is approximately 20.67, indicating strong ability to cover interest payments.\",\n                \"financialFlexibility\": \"The company has a solid cash position with RMB 137.03B in cash and short-term investments, providing financial flexibility.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is uncertain due to declining net income trends, but revenue growth suggests potential for recovery if costs are managed effectively.\",\n            \"growthProspects\": \"The 5-year CAGR for revenue per share is 12.94%, indicating potential for growth, but net income per share has a negative CAGR of -2.33%.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth continues at 12% with improved margins leading to net income recovery.\",\n                \"Base case: Revenue growth stabilizes at 8% with margins remaining under pressure, leading to modest net income growth.\",\n                \"Bear case: Economic downturn leads to reduced sales and further margin compression, resulting in declining revenues.\"\n            ],\n            \"valuationAssessment\": \"The stock is undervalued with a P/E of 7.16 and P/B of 0.71, suggesting potential for price appreciation if profitability improves.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "8b91e80f-f4fc-4354-b641-d55e4c30e232",
+      "symbol": "UPST.O",
+      "accuracy": {
+        "symbol": "UPST.O",
+        "parse_error": false,
+        "total_claims": 7,
+        "verified_correct": 6,
+        "errors": 1,
+        "warnings": 0,
+        "unverifiable": 0,
+        "hc_errors": 1,
+        "lc_errors": 0,
+        "accuracy_pct": 85.7,
+        "hc_accuracy_pct": 85.7,
+        "error_details": [
+          {
+            "claim_text": "Revenue growth of 67% year-over",
+            "metric": "revenue_growth",
+            "value": 67.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "executiveSummary.keyHighlights[0]",
+            "expected": 63.39,
+            "computed": 67.0,
+            "source": "(revenue[2025]-revenue[2024])/revenue[2024] = (1040.0-636.53)/636.53",
+            "verdict": "error",
+            "deviation_pct": 5.7
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4880
+      },
+      "latency_ms": 25310.32395362854,
+      "tokens_in": 5806,
+      "tokens_out": 971,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"Upstart Holdings Inc. is facing significant challenges in profitability and cash flow management, leading to a recommendation of STRONG SELL. The company's high valuation ratios and recent financial performance indicate a lack of sustainable growth and increasing operational inefficiencies.\",\n    \"keyHighlights\": [\n      \"Revenue growth of 67% year-over-year is impressive, but the net income remains negative, indicating ongoing operational challenges.\",\n      \"The company has a high P/E ratio of 46.74, suggesting overvaluation relative to its earnings potential.\",\n      \"The debt-to-equity ratio of 2.29 indicates high financial leverage, which could pose risks in a rising interest rate environment.\"\n    ],\n    \"recommendedAction\": \"SELL\",\n    \"confidenceLevel\": \"HIGH\",\n    \"targetPriceRange\": \"Given the current price of $25.83 and the financial metrics, a target price range of $15-$20 is suggested based on valuation multiples and growth sustainability concerns.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [\n        \"High levels of stock-based compensation impacting net income.\",\n        \"Negative cash flow from operations despite revenue growth.\"\n      ],\n      \"conservatismLevel\": \"The accounting practices appear aggressive, particularly in revenue recognition and expense management.\",\n      \"earningsQuality\": \"LOW\",\n      \"keyPolicies\": [\n        \"Revenue recognition policies may inflate current earnings without corresponding cash flow.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"Upstart operates in a competitive consumer lending market, leveraging AI for underwriting, but faces challenges from traditional lenders and emerging fintech competitors.\",\n      \"competitiveAdvantage\": \"The use of AI in credit assessment provides a technological edge, but the sustainability of this advantage is uncertain given the rapid evolution of the fintech landscape.\",\n      \"businessModel\": \"The business model is vulnerable due to reliance on external lending partners and market conditions affecting consumer credit.\",\n      \"keyRisks\": [\n        \"Regulatory changes in the lending industry.\",\n        \"Increased competition from both traditional banks and new fintech entrants.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover is low, indicating inefficiencies in asset management.\",\n        \"operationalEfficiency\": \"Operating margin of 4.78% shows limited profitability despite high revenue.\",\n        \"managementEffectiveness\": \"Management has struggled to convert revenue into profit, as evidenced by the negative cash flow from operations.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio is not provided, but cash and short-term investments of $652.39M against current liabilities indicate potential liquidity issues.\",\n        \"workingCapitalAnalysis\": \"Negative changes in working capital highlight inefficiencies in managing receivables and payables.\",\n        \"cashFlowQuality\": \"Cash flow from operations is negative, indicating poor cash conversion despite revenue growth.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 7.49% is driven by a high equity multiplier (3.72), indicating reliance on debt for returns.\",\n        \"profitabilityTrends\": \"Net margin of 5.13% shows improvement, but remains low compared to industry standards.\",\n        \"marginAnalysis\": \"Gross margin of 81.95% is strong, but operating margin remains weak at 4.78%, indicating high operating costs.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Debt-to-equity ratio of 2.29 indicates high leverage, which could be risky in a downturn.\",\n        \"coverageRatios\": \"Interest coverage ratio of 2.51 suggests that the company can cover interest expenses, but with limited buffer.\",\n        \"financialFlexibility\": \"High levels of debt limit financial flexibility and increase vulnerability to market fluctuations.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is uncertain due to ongoing operational losses and negative cash flow.\",\n      \"growthProspects\": \"While revenue growth is strong, sustainability is questionable given the high costs and competitive pressures.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Revenue growth continues at 25% CAGR, leading to profitability by 2027.\",\n        \"Base case: Revenue growth slows to 10% with continued operational losses.\",\n        \"Bear case: Revenue declines due to increased competition and regulatory challenges.\"\n      ],\n      \"valuationAssessment\": \"Current P/E of 46.74 suggests overvaluation; a more reasonable P/E based on industry averages would be closer to 20-25.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "339518fd-01a6-4118-a55d-ef51f636be47",
+      "symbol": "PLET.KL",
+      "accuracy": {
+        "symbol": "PLET.KL",
+        "parse_error": false,
+        "total_claims": 11,
+        "verified_correct": 6,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 5,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4909
+      },
+      "latency_ms": 17835.644960403442,
+      "tokens_in": 6152,
+      "tokens_out": 998,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Plenitude Bhd is positioned for significant growth in the real estate sector, driven by strong revenue increases in both property development and hotel operations. With a low P/E ratio and a solid dividend yield, the stock presents an attractive investment opportunity.\",\n        \"keyHighlights\": [\n            \"Revenue increased by 22% to RM629.39M in 2025, with net income rising 36% to RM116.37M, indicating robust operational performance.\",\n            \"The company has a low P/E ratio of 6.52 and a P/B ratio of 0.43, suggesting it is undervalued compared to peers.\",\n            \"Strong cash flow from operations at RM151.84M supports dividend payments and future investments, with a dividend yield of 3.77%.\"\n        ],\n        \"recommendedAction\": \"BUY\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"Target price range of MYR 2.50 to MYR 2.80 based on projected earnings growth and valuation multiples.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [],\n            \"conservatismLevel\": \"Moderate conservatism observed in revenue recognition and expense reporting.\",\n            \"earningsQuality\": \"HIGH\",\n            \"keyPolicies\": [\n                \"Revenue recognition is based on completed contracts in property development, which aligns with industry standards.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Plenitude operates in a competitive real estate market in Malaysia, focusing on both property development and hotel management, which diversifies its revenue streams.\",\n            \"competitiveAdvantage\": \"The company benefits from a diversified portfolio of properties and established hotel brands, providing a competitive edge in both sectors.\",\n            \"businessModel\": \"The dual focus on property development and hotel operations enhances revenue stability and growth potential.\",\n            \"keyRisks\": [\n                \"Economic downturns affecting real estate demand.\",\n                \"Regulatory changes in the property sector.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover ratio is 0.24 (629.39M revenue / 2.57B total assets), indicating moderate efficiency in asset utilization.\",\n                \"operationalEfficiency\": \"Operating margin improved to 26.69%, reflecting better cost management.\",\n                \"managementEffectiveness\": \"Management has effectively increased net income margins from 6.97% in 2022 to 19.01% in 2025.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 3.11 and quick ratio of 2.21 indicate strong short-term liquidity.\",\n                \"workingCapitalAnalysis\": \"Working capital management is effective, with total current assets of RM859.65M against current liabilities of RM276.52M.\",\n                \"cashFlowQuality\": \"Cash from operating activities is strong at RM151.84M, supporting ongoing operations and dividend payments.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 6.68% is driven by a net margin of 19.01% and an equity multiplier of 1.44.\",\n                \"profitabilityTrends\": \"Net income has grown significantly, with a 5-year CAGR of 70.1%, indicating strong profitability trends.\",\n                \"marginAnalysis\": \"Gross margin is stable at 49.59%, while net margin has improved significantly, reflecting operational efficiency.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt to equity ratio is 0.22, indicating a conservative capital structure.\",\n                \"coverageRatios\": \"Interest coverage ratio (Times Interest Earned) is 9.04, suggesting strong ability to cover interest expenses.\",\n                \"financialFlexibility\": \"The company maintains financial flexibility with a low debt level and strong cash reserves.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings are expected to grow, supported by ongoing projects and increased hotel occupancy rates.\",\n            \"growthProspects\": \"The company has a 5-year revenue per share CAGR of 27.22%, indicating strong growth potential.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Continued growth in property sales and hotel occupancy could push earnings growth to 30%.\",\n                \"Base case: Moderate growth of 20% in earnings as the market stabilizes.\",\n                \"Bear case: Economic downturn could lead to a 10% decline in earnings.\"\n            ],\n            \"valuationAssessment\": \"Valuation based on P/E and P/B ratios suggests the stock is undervalued, with potential for price appreciation.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "8ad86eea-ddc6-43d9-8ab6-79990fc33164",
+      "symbol": "BANPU.BK",
+      "accuracy": {
+        "symbol": "BANPU.BK",
+        "parse_error": false,
+        "total_claims": 11,
+        "verified_correct": 10,
+        "errors": 1,
+        "warnings": 0,
+        "unverifiable": 0,
+        "hc_errors": 0,
+        "lc_errors": 1,
+        "accuracy_pct": 90.9,
+        "hc_accuracy_pct": 100.0,
+        "error_details": [
+          {
+            "claim_text": "Revenue growth of 13% in Q1 202",
+            "metric": "revenue_growth",
+            "value": 13.0,
+            "year": "2025",
+            "unit": "percent",
+            "context_field": "executiveSummary.keyHighlights[0]",
+            "expected": 2.52,
+            "computed": 13.0,
+            "source": "(revenue[2025]-revenue[2024])/revenue[2024] = (5280.0-5150.0)/5150.0",
+            "verdict": "error",
+            "deviation_pct": 415.0
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4768
+      },
+      "latency_ms": 30273.327827453613,
+      "tokens_in": 6258,
+      "tokens_out": 980,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"Banpu PCL is positioned to capitalize on the growing demand for energy resources, particularly in renewable sectors, despite recent financial challenges. The company's diversified operations across coal, natural gas, and renewable energy provide a robust platform for recovery and growth.\",\n    \"keyHighlights\": [\n      \"Revenue growth of 13% in Q1 2025 indicates strong performance in the Energy Technology and Natural Gas segments, suggesting a shift towards more sustainable energy solutions.\",\n      \"The company's current P/B ratio of 0.53 indicates it is undervalued compared to its book value, presenting a potential buying opportunity.\",\n      \"Despite a net loss of $61.45M in 2025, the company maintains a dividend yield of 4.96%, reflecting a commitment to returning value to shareholders even in challenging times.\"\n    ],\n    \"recommendedAction\": \"BUY\",\n    \"confidenceLevel\": \"HIGH\",\n    \"targetPriceRange\": \"6.50 - 7.00 based on recovery potential and industry growth trends.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [\n        \"Negative net income and declining margins raise concerns about earnings quality.\",\n        \"High P/FCF ratio of 65.41 suggests potential overvaluation based on cash flow.\"\n      ],\n      \"conservatismLevel\": \"Moderate; the company has shown some aggressive accounting practices in revenue recognition.\",\n      \"earningsQuality\": \"MEDIUM\",\n      \"keyPolicies\": [\n        \"Revenue recognition policies may need scrutiny given the volatility in earnings.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"Banpu operates in a competitive energy sector with significant exposure to coal and renewable energy, positioning it well against peers focusing on sustainability.\",\n      \"competitiveAdvantage\": \"The company's diversified portfolio across energy resources and technology provides a buffer against market volatility.\",\n      \"businessModel\": \"The business model is sustainable but faces challenges from fluctuating coal prices and regulatory pressures on fossil fuels.\",\n      \"keyRisks\": [\n        \"Regulatory changes impacting coal operations.\",\n        \"Market volatility in energy prices.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover ratio is approximately 0.38 (5.28B revenue / 13.94B total assets), indicating moderate efficiency.\",\n        \"operationalEfficiency\": \"Operating margin has declined to 4.89%, reflecting increased costs and competitive pressures.\",\n        \"managementEffectiveness\": \"Management has shown effectiveness in maintaining revenue growth despite rising costs.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio of 1.19 and quick ratio of 1.09 indicate adequate short-term liquidity.\",\n        \"workingCapitalAnalysis\": \"Working capital management is under pressure with a cash conversion cycle of 54.8 days.\",\n        \"cashFlowQuality\": \"Cash from operating activities of $430.71M indicates positive cash flow despite net losses.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of -1.8% indicates poor profitability; ROA of -0.44% suggests asset inefficiency.\",\n        \"profitabilityTrends\": \"Net margin has decreased to 0.58%, highlighting profitability challenges.\",\n        \"marginAnalysis\": \"Gross margin at 22.7% and operating margin at 4.89% show declining profitability trends.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Debt-to-equity ratio of 2.14 indicates high leverage, which could pose risks in downturns.\",\n        \"coverageRatios\": \"Interest coverage ratio of 0.76 suggests potential difficulties in meeting interest obligations.\",\n        \"financialFlexibility\": \"The company has limited financial flexibility due to high debt levels and declining profitability.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is contingent on recovery in coal prices and growth in renewable segments.\",\n      \"growthProspects\": \"5-year CAGR for revenue per share at 6.81% suggests potential for growth, but net income growth remains uncertain.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Recovery in coal prices and strong growth in renewables could push earnings significantly higher.\",\n        \"Base case: Moderate growth in revenues with stable coal prices and continued investment in renewables.\",\n        \"Bear case: Continued losses due to regulatory pressures and declining coal demand.\"\n      ],\n      \"valuationAssessment\": \"Current valuation metrics suggest the stock is undervalued, with a P/B of 0.53 and potential for recovery.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "967d42e9-de74-451b-85da-0a6517c31493",
+      "symbol": "CPF.BK",
+      "accuracy": {
+        "symbol": "CPF.BK",
+        "parse_error": false,
+        "total_claims": 8,
+        "verified_correct": 7,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 1,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4932
+      },
+      "latency_ms": 14204.349040985107,
+      "tokens_in": 6276,
+      "tokens_out": 1030,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"Charoen Pokphand Foods PCL is positioned to maintain a stable presence in the consumer non-cyclicals sector, driven by its diversified product offerings and strong market position in Thailand. However, the company's recent financial performance indicates volatility, necessitating a cautious approach to investment.\",\n    \"keyHighlights\": [\n      \"The company's P/E ratio of 6.03 suggests it is undervalued compared to industry averages, indicating potential for price appreciation.\",\n      \"Despite a recent increase in net income to BAH 22.30B, the net margin remains low at 3.84%, highlighting challenges in profitability.\",\n      \"The current ratio of 0.76 and quick ratio of 0.5 indicate potential liquidity concerns, which could impact short-term financial stability.\"\n    ],\n    \"recommendedAction\": \"HOLD\",\n    \"confidenceLevel\": \"MEDIUM\",\n    \"targetPriceRange\": \"THB 22-24 based on P/E valuation and market conditions.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [\n        \"Significant fluctuations in net income, with a previous loss in 2023 indicating potential volatility in earnings.\"\n      ],\n      \"conservatismLevel\": \"Moderate; the company appears to use conservative accounting practices, but the volatility in earnings raises concerns.\",\n      \"earningsQuality\": \"MEDIUM\",\n      \"keyPolicies\": [\n        \"Revenue recognition appears consistent with industry standards, but the high level of debt may obscure true financial health.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"Charoen Pokphand Foods operates in a competitive agro-industrial sector, with a strong foothold in Thailand and expanding presence in Asia.\",\n      \"competitiveAdvantage\": \"The company's vertical integration from feed production to food distribution provides a significant competitive edge.\",\n      \"businessModel\": \"The business model is robust, but reliance on livestock prices and market demand poses vulnerabilities.\",\n      \"keyRisks\": [\n        \"Fluctuations in commodity prices, regulatory changes, and competition from local and international players.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover is approximately 0.66, indicating moderate efficiency in utilizing assets to generate revenue.\",\n        \"operationalEfficiency\": \"Operating margin improved to 5.91%, reflecting better cost management despite revenue decline.\",\n        \"managementEffectiveness\": \"Management has shown effectiveness in improving net income, but the low ROE of 8.06% suggests room for improvement.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio of 0.76 and quick ratio of 0.5 indicate potential liquidity issues, necessitating careful cash management.\",\n        \"workingCapitalAnalysis\": \"Working capital management is critical, with changes in inventory and receivables impacting cash flow.\",\n        \"cashFlowQuality\": \"Cash from operating activities increased to BAH 65.14B, indicating strong cash generation despite net income fluctuations.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 8.06% is driven by a net margin of 3.84% and an equity multiplier of 3.56, indicating reliance on leverage.\",\n        \"profitabilityTrends\": \"Net income increased significantly from a loss in 2023 to BAH 22.30B in 2024, but net margin remains low.\",\n        \"marginAnalysis\": \"Gross margin improved to 14.64%, but operating margin remains a concern at 5.91%.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Total debt to equity ratio stands at 2.01, indicating high leverage which could pose risks in downturns.\",\n        \"coverageRatios\": \"Interest coverage ratio of 1.4 suggests limited ability to cover interest expenses, raising concerns about financial flexibility.\",\n        \"financialFlexibility\": \"The company\u2019s high debt levels may limit its ability to respond to financial challenges.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is contingent on stabilizing commodity prices and maintaining market share in a competitive landscape.\",\n      \"growthProspects\": \"The 5-year CAGR for revenue per share is 2.88%, indicating modest growth potential, but net income growth is stagnant.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Improved commodity prices and market expansion could drive revenue growth above 5%.\",\n        \"Base case: Stable growth at current rates with potential for slight margin improvement.\",\n        \"Bear case: Continued volatility in livestock prices and increased competition could lead to revenue declines.\"\n      ],\n      \"valuationAssessment\": \"With a P/E of 6.03, the stock appears undervalued compared to industry peers, suggesting potential for price appreciation.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "8d09521d-0ba0-456e-b996-7d2eebf91cad",
+      "symbol": "DELTA.BK",
+      "accuracy": {
+        "symbol": "DELTA.BK",
+        "parse_error": false,
+        "total_claims": 11,
+        "verified_correct": 7,
+        "errors": 2,
+        "warnings": 0,
+        "unverifiable": 2,
+        "hc_errors": 2,
+        "lc_errors": 0,
+        "accuracy_pct": 77.8,
+        "hc_accuracy_pct": 77.8,
+        "error_details": [
+          {
+            "claim_text": "Revenue growth of 12% year-over",
+            "metric": "revenue_growth",
+            "value": 12.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "executiveSummary.keyHighlights[0]",
+            "expected": 20.29,
+            "computed": 12.0,
+            "source": "(revenue[2025]-revenue[2024])/revenue[2024] = (198150.0-164730.0)/164730.0",
+            "verdict": "error",
+            "deviation_pct": 40.85
+          },
+          {
+            "claim_text": ".67% for revenue per share and 28.43% for net i",
+            "metric": "revenue_growth_cagr",
+            "value": 28.43,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.prospectiveAnalysis.futureEarnings",
+            "expected": 25.67,
+            "computed": 28.43,
+            "source": "growth_rates.revenue_per_share_5yr_cagr",
+            "verdict": "error",
+            "deviation_pct": 10.75
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4798
+      },
+      "latency_ms": 42476.049184799194,
+      "tokens_in": 6166,
+      "tokens_out": 1009,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"Delta Electronics Thailand PCL demonstrates strong growth potential with a robust financial performance, highlighted by a high return on equity and consistent revenue growth. The company's strategic positioning in the electrical components sector, coupled with its innovative product offerings, supports a favorable investment outlook.\",\n    \"keyHighlights\": [\n      \"Revenue growth of 12% year-over-year, driven by strong performance in the Infrastructure and Automation segments, indicating a solid demand for its products.\",\n      \"Net income increased by 27%, showcasing effective cost management and operational efficiency, with a net margin of 12.52%.\",\n      \"A high return on equity (ROE) of 28.09% reflects strong profitability and effective use of equity capital, positioning the company favorably against industry peers.\"\n    ],\n    \"recommendedAction\": \"BUY\",\n    \"confidenceLevel\": \"HIGH\",\n    \"targetPriceRange\": \"Target price range of THB 300-320 based on projected growth rates and current valuation metrics.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [],\n      \"conservatismLevel\": \"The accounting practices appear conservative, with no significant red flags identified.\",\n      \"earningsQuality\": \"HIGH\",\n      \"keyPolicies\": [\n        \"Revenue recognition is consistent with industry standards, focusing on completed contracts and delivery of goods.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"Delta Electronics operates in a competitive landscape with strong demand for electrical components, particularly in the mobility and automation sectors.\",\n      \"competitiveAdvantage\": \"The company benefits from a strong brand reputation, innovative product offerings, and a diversified business model across multiple segments.\",\n      \"businessModel\": \"The business model is sustainable, leveraging R&D to drive innovation and maintain market leadership.\",\n      \"keyRisks\": [\n        \"Potential supply chain disruptions affecting production.\",\n        \"Increased competition from both local and international players.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover ratio is approximately 1.29 (calculated as total revenue of THB 198.15B / total assets of THB 154.13B), indicating effective asset utilization.\",\n        \"operationalEfficiency\": \"Operating margin improved to 14.48%, reflecting better cost management and operational efficiency.\",\n        \"managementEffectiveness\": \"Management has effectively increased net income while controlling costs, as evidenced by a decrease in finance costs by 46%.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio of 1.99 and quick ratio of 1.33 indicate strong short-term liquidity.\",\n        \"workingCapitalAnalysis\": \"The cash conversion cycle of 87.1 days suggests efficient working capital management.\",\n        \"cashFlowQuality\": \"Cash from operating activities of THB 28.08B supports the sustainability of earnings.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 28.09% is driven by a net margin of 12.52% and an asset turnover of 1.29, indicating effective use of equity.\",\n        \"profitabilityTrends\": \"Net income has grown from THB 15.34B in 2022 to THB 24.81B in 2025, reflecting a strong upward trend.\",\n        \"marginAnalysis\": \"Gross margin improved to 27.05%, indicating better pricing power and cost control.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Total debt to equity ratio is 0.02, indicating a low level of debt and strong financial stability.\",\n        \"coverageRatios\": \"Interest coverage ratio is exceptionally high at 450.57, suggesting strong ability to meet interest obligations.\",\n        \"financialFlexibility\": \"The company maintains a strong balance sheet with significant cash reserves of THB 20.29B.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings are expected to grow at a CAGR of 25.67% for revenue per share and 28.43% for net income per share, driven by continued demand in key segments.\",\n      \"growthProspects\": \"The company is well-positioned to capitalize on the growing demand for electric vehicles and automation solutions.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Revenue growth accelerates to 30% with increased market share.\",\n        \"Base case: Revenue growth stabilizes at 25% with steady demand.\",\n        \"Bear case: Revenue growth slows to 15% due to increased competition.\"\n      ],\n      \"valuationAssessment\": \"Current P/E ratio of 130.2 suggests the stock is overvalued; however, growth prospects justify a premium valuation.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "ca6bdf7a-ba69-4156-b82b-f5fed0793dc5",
+      "symbol": "BLK",
+      "accuracy": {
+        "symbol": "BLK",
+        "parse_error": false,
+        "total_claims": 25,
+        "verified_correct": 19,
+        "errors": 3,
+        "warnings": 0,
+        "unverifiable": 3,
+        "hc_errors": 1,
+        "lc_errors": 2,
+        "accuracy_pct": 86.4,
+        "hc_accuracy_pct": 95.5,
+        "error_details": [
+          {
+            "claim_text": "Revenue increased by 12% to $10.7B for the s",
+            "metric": "revenue",
+            "value": 10.7,
+            "unit_char": "B",
+            "year": "2025",
+            "unit": "dollars",
+            "context_field": "executiveSummary.keyHighlights[0]",
+            "expected": 17860.0,
+            "computed": 10700.0,
+            "source": "income_statement.revenue[2023]",
+            "verdict": "error",
+            "deviation_pct": 40.09
+          },
+          {
+            "claim_text": "Net income growth was only 1% to $3.1B,",
+            "metric": "net_income_growth",
+            "value": 1.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "executiveSummary.keyHighlights[1]",
+            "expected": -12.87,
+            "computed": 1.0,
+            "source": "net_income YoY growth",
+            "verdict": "error",
+            "deviation_pct": 107.77
+          },
+          {
+            "claim_text": "net income growth is slower at 2.4%.",
+            "metric": "net_income_growth",
+            "value": 2.4,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.prospectiveAnalysis.futureEarnings",
+            "expected": -12.87,
+            "computed": 2.4,
+            "source": "net_income YoY growth",
+            "verdict": "error",
+            "deviation_pct": 118.64
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5683
+      },
+      "latency_ms": 20655.02381324768,
+      "tokens_in": 5735,
+      "tokens_out": 1147,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"BlackRock Inc. demonstrates solid revenue growth and profitability, but faces challenges in net income stability and high valuation multiples. The company's strong market position and diversified product offerings provide a foundation for future growth, but investors should be cautious of potential market volatility.\",\n        \"keyHighlights\": [\n            \"Revenue increased by 12% to $10.7B for the six months ended June 2025, indicating strong demand for investment products.\",\n            \"Net income growth was only 1% to $3.1B, highlighting potential pressures on profitability despite revenue growth.\",\n            \"The P/E ratio stands at 29.89, suggesting the stock may be overvalued compared to historical averages.\",\n            \"The gross margin remains strong at 81.58%, indicating effective cost management in generating revenue.\",\n            \"The dividend yield of 2.12% reflects a commitment to returning value to shareholders, although the growth rate of dividends has slowed.\"\n        ],\n        \"recommendedAction\": \"HOLD\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"Target price range of $1,000 to $1,100 based on current valuation metrics and growth prospects.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\"No significant red flags identified; however, the decrease in net income raises questions about sustainability.\"],\n            \"conservatismLevel\": \"Moderate; the company appears to follow standard accounting practices without aggressive accounting.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\"Revenue recognition appears consistent with industry standards; no unusual accounting practices noted.\"]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"BlackRock holds a leading position in the investment management industry, benefiting from a diverse range of products and services.\",\n            \"competitiveAdvantage\": \"The company's scale, brand recognition, and technology platform (Aladdin) provide significant competitive advantages.\",\n            \"businessModel\": \"The business model is sustainable, leveraging technology and a broad product offering to meet client needs.\",\n            \"keyRisks\": [\"Market volatility affecting asset management fees\", \"Regulatory changes impacting investment strategies\", \"Increased competition from fintech firms\"]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total assets of $138.62B with net income of $5.55B results in an asset turnover ratio of approximately 0.04, indicating low asset utilization.\",\n                \"operationalEfficiency\": \"Operating margin of 29.09% reflects strong operational efficiency despite rising expenses.\",\n                \"managementEffectiveness\": \"Management effectiveness is moderate, with ROE at 11.69%, indicating room for improvement in capital utilization.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio not provided; however, cash and short-term investments of $12.78B suggest adequate liquidity.\",\n                \"workingCapitalAnalysis\": \"Working capital management appears efficient, with a focus on cash flow generation.\",\n                \"cashFlowQuality\": \"Cash from operating activities was $4.96B, indicating strong cash flow quality.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 11.69% can be broken down as follows: ROA (Net Margin of 24.54% \u00d7 Asset Turnover of 0.04) = 0.98%, multiplied by an equity multiplier of approximately 12 (total assets of $138.62B / total equity of $47.49B).\",\n                \"profitabilityTrends\": \"Net margin has decreased from 31.91% in 2024 to 24.54% in 2025, indicating potential pressure on profitability.\",\n                \"marginAnalysis\": \"Gross margin remains strong at 81.58%, while operating margin has decreased to 29.09%, reflecting rising operational costs.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt of $12.31B against total equity of $47.49B results in a debt-to-equity ratio of approximately 0.26, indicating manageable leverage.\",\n                \"coverageRatios\": \"Interest coverage ratio (EBIT/Interest Expense) is strong at 117.42, suggesting good ability to cover interest obligations.\",\n                \"financialFlexibility\": \"The company has good financial flexibility, with a low total debt to EBITDA ratio of 0, indicating no reliance on debt financing.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is supported by a 5-year CAGR of 7.54% in revenue per share, although net income growth is slower at 2.4%.\",\n            \"growthProspects\": \"Growth sustainability is moderate, with potential for revenue growth driven by market demand and product diversification.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 10% annually, leading to higher net income and improved margins.\",\n                \"Base case: Revenue growth stabilizes at 7.54%, with net income growth aligning with historical trends.\",\n                \"Bear case: Market volatility leads to a decline in AUM, resulting in flat or declining revenues.\"\n            ],\n            \"valuationAssessment\": \"Current P/E ratio of 29.89 suggests the stock is overvalued compared to historical averages; a more reasonable P/E might be in the range of 20-25 based on growth prospects.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "c960d0dc-9cda-4fa5-a3d1-3ff123fce773",
+      "symbol": "LULU.O",
+      "accuracy": {
+        "symbol": "LULU.O",
+        "parse_error": false,
+        "total_claims": 11,
+        "verified_correct": 7,
+        "errors": 4,
+        "warnings": 0,
+        "unverifiable": 0,
+        "hc_errors": 3,
+        "lc_errors": 1,
+        "accuracy_pct": 63.6,
+        "hc_accuracy_pct": 72.7,
+        "error_details": [
+          {
+            "claim_text": "Revenue growth has slowed to 7% in the la",
+            "metric": "revenue_growth",
+            "value": 7.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "executiveSummary.keyHighlights[0]",
+            "expected": 10.08,
+            "computed": 7.0,
+            "source": "(revenue[2025]-revenue[2024])/revenue[2024] = (10590.0-9620.0)/9620.0",
+            "verdict": "error",
+            "deviation_pct": 30.58
+          },
+          {
+            "claim_text": "et income growth has slowed to 2% in the la",
+            "metric": "net_income_growth",
+            "value": 2.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.financialPerformance.profitabilityAnalysis.profitabilityTrends",
+            "expected": 16.77,
+            "computed": 2.0,
+            "source": "net_income YoY growth",
+            "verdict": "error",
+            "deviation_pct": 88.08
+          },
+          {
+            "claim_text": "istorical growth rates of over 20%.",
+            "metric": "net_income_growth",
+            "value": 20.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.financialPerformance.profitabilityAnalysis.profitabilityTrends",
+            "expected": 16.77,
+            "computed": 20.0,
+            "source": "net_income YoY growth",
+            "verdict": "error",
+            "deviation_pct": 19.23
+          },
+          {
+            "claim_text": "venue and net income is around 22%, but rece",
+            "metric": "revenue_growth_cagr",
+            "value": 22.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.prospectiveAnalysis.growthProspects",
+            "expected": 22.97,
+            "computed": 22.0,
+            "source": "growth_rates.revenue_per_share_5yr_cagr",
+            "verdict": "error",
+            "deviation_pct": 4.22
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5957
+      },
+      "latency_ms": 32768.38803291321,
+      "tokens_in": 5969,
+      "tokens_out": 1115,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Lululemon Athletica Inc. is experiencing a slowdown in revenue growth and profitability, which, combined with high valuation ratios, suggests a potential overvaluation. The company's strong brand and operational efficiency are offset by declining momentum and increasing competition in the athletic apparel market.\",\n        \"keyHighlights\": [\n            \"Revenue growth has slowed to 7% in the latest quarter, down from higher historical growth rates, indicating potential market saturation.\",\n            \"Despite a high ROE of 42.42%, the P/E ratio of 11.27 suggests the stock may be overvalued compared to historical averages.\",\n            \"The company has no debt, providing financial flexibility, but the lack of dividends and a declining cash balance raise concerns about capital allocation.\",\n            \"Gross margins remain strong at 59.22%, but increasing SGA expenses could pressure future profitability.\",\n            \"The current ratio of 2.16 indicates good short-term liquidity, but the cash conversion cycle of 94.9 days suggests inefficiencies in working capital management.\"\n        ],\n        \"recommendedAction\": \"SELL\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"Based on current valuation metrics, a target price range of $140 to $150 is suggested, reflecting potential downside from current levels.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\n                \"No dividends paid since 2021 raises concerns about capital return to shareholders.\",\n                \"High non-cash items in cash flow could indicate aggressive accounting practices.\"\n            ],\n            \"conservatismLevel\": \"The accounting practices appear moderately conservative, with no significant off-balance sheet liabilities.\",\n            \"earningsQuality\": \"HIGH\",\n            \"keyPolicies\": [\n                \"Revenue recognition appears consistent with industry standards, focusing on sales through multiple channels.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Lululemon operates in a competitive athletic apparel market, facing pressure from both established brands and new entrants.\",\n            \"competitiveAdvantage\": \"Strong brand loyalty and premium pricing strategy provide a competitive edge, but the sustainability of this advantage is under scrutiny as competition intensifies.\",\n            \"businessModel\": \"The multi-channel approach (retail, e-commerce, and wholesale) is a strength, but reliance on physical stores may be a vulnerability in a shifting retail landscape.\",\n            \"keyRisks\": [\n                \"Increased competition from both high-end and low-cost athletic apparel brands.\",\n                \"Potential supply chain disruptions affecting inventory management.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover is approximately 1.36, indicating effective use of assets to generate revenue.\",\n                \"operationalEfficiency\": \"Operating margin has improved to 23.67%, reflecting strong cost management despite rising SGA expenses.\",\n                \"managementEffectiveness\": \"Management has demonstrated effectiveness in maintaining high ROE and profit margins, but future performance may be challenged by market conditions.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 2.16 and quick ratio of 1.38 indicate strong short-term liquidity.\",\n                \"workingCapitalAnalysis\": \"The cash conversion cycle of 94.9 days suggests room for improvement in working capital management.\",\n                \"cashFlowQuality\": \"Cash from operating activities is strong at $2.27B, but declining cash balance raises concerns about future liquidity.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 42.42% is driven by a net margin of 17.14% and an asset turnover of 1.36, indicating effective management of both profitability and asset utilization.\",\n                \"profitabilityTrends\": \"Net income growth has slowed to 2% in the latest quarter, contrasting with historical growth rates of over 20%.\",\n                \"marginAnalysis\": \"Gross margin remains strong at 59.22%, but operating margin has only slightly improved, indicating potential pressure on profitability.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Lululemon has no debt, providing a strong capital structure and financial flexibility.\",\n                \"coverageRatios\": \"Interest coverage is not applicable due to no debt, enhancing financial stability.\",\n                \"financialFlexibility\": \"The absence of debt allows for strategic investments or responses to market changes without the burden of interest payments.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power may be constrained by slowing revenue growth and increasing competition, with a focus on maintaining margins.\",\n            \"growthProspects\": \"The 5-year CAGR for revenue and net income is around 22%, but recent trends suggest a potential slowdown.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Continued brand strength and market expansion could lead to revenue growth of 10% annually.\",\n                \"Base case: Moderate growth of 5-7% as competition increases and market saturation occurs.\",\n                \"Bear case: Revenue declines of 2-3% if competitive pressures significantly impact market share.\"\n            ],\n            \"valuationAssessment\": \"Current P/E of 11.27 suggests the stock may be undervalued relative to growth potential, but high valuation ratios compared to historical averages indicate caution.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "5e190520-c004-413e-950e-61a9c285800e",
+      "symbol": "SMG",
+      "accuracy": {
+        "symbol": "SMG",
+        "parse_error": false,
+        "total_claims": 16,
+        "verified_correct": 15,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 1,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5493
+      },
+      "latency_ms": 16031.404733657837,
+      "tokens_in": 6120,
+      "tokens_out": 1073,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Scotts Miracle-Gro Co is currently facing significant challenges with declining revenues and net income, but has shown a remarkable recovery in profitability metrics. The company's strong dividend yield and defensive characteristics make it a potential hold for income-focused investors, despite the volatility in its stock price.\",\n        \"keyHighlights\": [\n            \"Revenue has decreased from $3.92B in 2022 to $3.41B in 2025, reflecting a negative trend in sales performance.\",\n            \"Net income has rebounded significantly from a loss of $437.5M in 2022 to a profit of $145.2M in 2025, indicating improved operational efficiency.\",\n            \"The company maintains a strong dividend yield of 4.06%, which is attractive for income-seeking investors.\",\n            \"The gross margin has improved to 31.19% in 2025 from 26.32% in 2022, showcasing better cost management.\",\n            \"The current ratio stands at 1.27, indicating adequate short-term liquidity, but the quick ratio of 0.47 suggests potential liquidity concerns.\"\n        ],\n        \"recommendedAction\": \"HOLD\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"$60 - $70 based on current valuation metrics and market conditions.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\"High levels of unusual expenses in previous years\", \"Negative retained earnings indicating accumulated losses\"],\n            \"conservatismLevel\": \"Moderate, with some aggressive accounting practices evident in the treatment of unusual expenses.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\"Revenue recognition appears consistent with industry standards, but unusual expenses may distort true profitability.\"]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Scotts Miracle-Gro operates in a competitive agricultural chemicals market, facing pressure from both traditional and emerging players in the gardening sector.\",\n            \"competitiveAdvantage\": \"Strong brand recognition and a diverse product portfolio provide a competitive edge, but reliance on consumer spending poses risks.\",\n            \"businessModel\": \"The business model is vulnerable to economic downturns, as discretionary spending on lawn and garden products can decline.\",\n            \"keyRisks\": [\"Economic downturn affecting consumer spending\", \"Increased competition from low-cost providers\", \"Regulatory changes impacting product formulations\"]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover is approximately 0.25, indicating lower efficiency in asset utilization compared to industry standards.\",\n                \"operationalEfficiency\": \"Operating margin improved to 10.51% in 2025 from -11.06% in 2022, reflecting better cost control.\",\n                \"managementEffectiveness\": \"Management has shown effectiveness in reducing costs, as evidenced by the significant improvement in net income.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.27 indicates sufficient liquidity, but quick ratio of 0.47 raises concerns about immediate cash availability.\",\n                \"workingCapitalAnalysis\": \"Working capital management has improved, but the cash conversion cycle of 73.6 days suggests room for improvement.\",\n                \"cashFlowQuality\": \"Cash from operating activities was $371.3M, indicating positive cash flow generation despite revenue declines.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE is not calculable due to negative equity, but ROA of 5.3% indicates reasonable asset efficiency.\",\n                \"profitabilityTrends\": \"Net margin improved to 4.25% in 2025 from -11.15% in 2022, showing a strong recovery in profitability.\",\n                \"marginAnalysis\": \"Gross margin has improved to 31.19%, indicating better cost management and pricing power.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt to equity ratio is not calculable due to negative equity, but total debt stands at $2.11B.\",\n                \"coverageRatios\": \"Interest coverage ratio (EBIT/Interest Expense) is approximately 2.78, indicating adequate coverage of interest obligations.\",\n                \"financialFlexibility\": \"The company has limited financial flexibility due to high leverage and negative equity.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is uncertain due to declining revenue trends, but improved profitability metrics suggest potential for recovery.\",\n            \"growthProspects\": \"Growth sustainability is challenged by market conditions, with a 5-year CAGR of -4.35% for revenue per share.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth returns with a CAGR of 5%, leading to improved profitability.\",\n                \"Base case: Revenue stabilizes with modest growth, maintaining current profitability levels.\",\n                \"Bear case: Continued revenue decline leads to further losses and potential liquidity issues.\"\n            ],\n            \"valuationAssessment\": \"Current P/E ratio of 22.55 suggests the stock may be overvalued relative to its earnings growth potential.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "311beb27-7380-4521-8f7a-a067a3d463b4",
+      "symbol": "3078.TWO",
+      "accuracy": {
+        "symbol": "3078.TWO",
+        "parse_error": false,
+        "total_claims": 10,
+        "verified_correct": 8,
+        "errors": 0,
+        "warnings": 1,
+        "unverifiable": 1,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 88.9,
+        "hc_accuracy_pct": 88.9,
+        "error_details": [
+          {
+            "claim_text": "gin has remained stable around 24%, indicati",
+            "metric": "gross_margin",
+            "value": 24.0,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.financialPerformance.profitabilityAnalysis.marginAnalysis",
+            "expected": 24.28,
+            "computed": 24.0,
+            "source": "ratios.gross_margin[2024]",
+            "verdict": "warning",
+            "deviation_pct": 1.15
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5397
+      },
+      "latency_ms": 18031.657934188843,
+      "tokens_in": 6070,
+      "tokens_out": 1095,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Channel Well Technology Co Ltd demonstrates strong financial health with robust profitability metrics and a solid balance sheet, making it an attractive investment opportunity. The company's strategic positioning in the technology sector, coupled with a strong dividend yield, supports a favorable outlook for growth.\",\n        \"keyHighlights\": [\n            \"The company has a high ROE of 21.9% and a net margin of 14.84%, indicating strong profitability and effective cost management.\",\n            \"With a current ratio of 3.14 and a quick ratio of 2.64, Channel Well Technology exhibits excellent short-term liquidity, ensuring it can meet its obligations.\",\n            \"The 5-year CAGR for revenue per share is 10.51%, suggesting sustainable growth potential in a competitive market.\"\n        ],\n        \"recommendedAction\": \"BUY\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"Based on a P/E ratio of 9.63 and projected earnings growth, a target price range of TWD 70-75 is reasonable.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [],\n            \"conservatismLevel\": \"The accounting practices appear conservative, with no significant red flags identified.\",\n            \"earningsQuality\": \"HIGH\",\n            \"keyPolicies\": [\n                \"Revenue recognition appears consistent with industry standards, focusing on actual sales and cash flows.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Channel Well Technology operates in a competitive online services industry, primarily focusing on power supply solutions, which are essential for various electronic devices.\",\n            \"competitiveAdvantage\": \"The company benefits from a strong brand reputation and established relationships with clients across multiple regions, providing a competitive edge.\",\n            \"businessModel\": \"The business model is sustainable, focusing on innovation and quality in power supply manufacturing, which is critical in the technology sector.\",\n            \"keyRisks\": [\n                \"Fluctuations in raw material prices could impact margins.\",\n                \"Intense competition in the technology sector may pressure pricing.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"The asset turnover ratio is approximately 0.86 (calculated as total revenue of TWD 8.62B / total assets of TWD 10.09B), indicating effective use of assets.\",\n                \"operationalEfficiency\": \"The operating margin has decreased from 16.84% in 2023 to 14.41% in 2024, suggesting some operational challenges.\",\n                \"managementEffectiveness\": \"Management has effectively increased net income by 24% year-over-year, reflecting strong operational management.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"The current ratio of 3.14 and quick ratio of 2.64 indicate strong liquidity, well above the industry average.\",\n                \"workingCapitalAnalysis\": \"The cash conversion cycle is 88.1 days, which is reasonable, but improvements could enhance liquidity further.\",\n                \"cashFlowQuality\": \"Cash from operating activities is strong at TWD 1.73B, indicating high-quality earnings.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 21.9% can be broken down into ROA of 13.65% and an equity multiplier of 1.61 (calculated as total assets of TWD 10.09B / total equity of TWD 7.00B).\",\n                \"profitabilityTrends\": \"Net income has shown a consistent upward trend, increasing from TWD 710.64M in 2022 to TWD 1.28B in 2024.\",\n                \"marginAnalysis\": \"Gross margin has remained stable around 24%, indicating effective cost control despite revenue fluctuations.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"The debt-to-equity ratio is 0, indicating no reliance on debt financing, which enhances financial stability.\",\n                \"coverageRatios\": \"The interest coverage ratio is very high at 130.9, indicating strong ability to cover interest expenses.\",\n                \"financialFlexibility\": \"The absence of long-term debt provides significant financial flexibility for future investments.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is supported by a 5-year CAGR of 10.51% for revenue per share, indicating strong growth potential.\",\n            \"growthProspects\": \"The company is well-positioned to capitalize on the growing demand for power supplies in various sectors, including consumer electronics and industrial applications.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Continued growth in demand could push revenue growth to 15%, leading to a target price of TWD 80.\",\n                \"Base case: Stable growth at 10% leads to a target price of TWD 75.\",\n                \"Bear case: A slowdown in the technology sector could reduce growth to 5%, resulting in a target price of TWD 65.\"\n            ],\n            \"valuationAssessment\": \"Using a P/E ratio of 9.63 and projected earnings growth, the valuation appears attractive compared to industry peers.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "08ae7248-478c-40c4-ba90-1c30c020aa18",
+      "symbol": "9992.HK",
+      "accuracy": {
+        "symbol": "9992.HK",
+        "parse_error": false,
+        "total_claims": 10,
+        "verified_correct": 7,
+        "errors": 1,
+        "warnings": 0,
+        "unverifiable": 2,
+        "hc_errors": 0,
+        "lc_errors": 1,
+        "accuracy_pct": 87.5,
+        "hc_accuracy_pct": 100.0,
+        "error_details": [
+          {
+            "claim_text": "ojected revenue growth rate of 51.69% over the",
+            "metric": "revenue_growth",
+            "value": 51.69,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.prospectiveAnalysis.futureEarnings",
+            "expected": 106.98,
+            "computed": 51.69,
+            "source": "(revenue[2024]-revenue[2023])/revenue[2023] = (13040.0-6300.0)/6300.0",
+            "verdict": "error",
+            "deviation_pct": 51.68
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4715
+      },
+      "latency_ms": 15999.907970428467,
+      "tokens_in": 6177,
+      "tokens_out": 973,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Pop Mart International Group Ltd has demonstrated robust revenue and net income growth, driven by strong performance in both retail and online sales. However, high valuation ratios and a low dividend yield suggest caution for potential investors.\",\n        \"keyHighlights\": [\n            \"Revenue increased from RMB 6.3B in 2023 to RMB 13.04B in 2024, reflecting a strong growth trajectory.\",\n            \"Net income surged from RMB 1.08B to RMB 3.13B, indicating improved profitability and operational efficiency.\",\n            \"The company maintains a high ROE of 60.03%, showcasing effective use of equity capital despite high valuation ratios.\",\n            \"Current ratio of 3.63 and quick ratio of 3.18 indicate strong short-term liquidity, but the defensive score of 2.5 suggests potential volatility.\",\n            \"Valuation ratios such as P/E of 39.38 and P/B of 25.23 indicate the stock may be overvalued relative to its earnings and book value.\"\n        ],\n        \"recommendedAction\": \"HOLD\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"Target price range of HKD 200-230 based on current valuation metrics and growth prospects.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [],\n            \"conservatismLevel\": \"Moderate; no aggressive accounting practices identified.\",\n            \"earningsQuality\": \"HIGH\",\n            \"keyPolicies\": [\n                \"Revenue recognition appears conservative, with no significant off-balance sheet items.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Pop Mart operates in a growing niche of the consumer cyclicals sector, with a strong brand presence in pop toys.\",\n            \"competitiveAdvantage\": \"Strong IP portfolio and integrated operation platform provide a sustainable competitive advantage.\",\n            \"businessModel\": \"The business model is robust, leveraging both retail and online channels effectively.\",\n            \"keyRisks\": [\n                \"Market saturation in the pop toy segment.\",\n                \"Dependence on consumer discretionary spending.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover ratio is approximately 0.88, indicating effective asset utilization.\",\n                \"operationalEfficiency\": \"Operating margin improved to 31.86% in 2024, up from 19.53% in 2023.\",\n                \"managementEffectiveness\": \"Management has effectively increased net income margins from 17.28% to 25.38%.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 3.63 and quick ratio of 3.18 indicate strong liquidity.\",\n                \"workingCapitalAnalysis\": \"Working capital management is efficient, with a cash conversion cycle of 52.2 days.\",\n                \"cashFlowQuality\": \"Cash from operating activities increased to RMB 4.95B, reflecting strong cash flow generation.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 60.03% is driven by a net margin of 25.38% and an equity multiplier of 1.39.\",\n                \"profitabilityTrends\": \"Net income growth of 189% year-over-year indicates strong profitability trends.\",\n                \"marginAnalysis\": \"Gross margin improved to 66.79%, indicating better cost management.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Debt-to-equity ratio stands at 0.12, indicating low leverage.\",\n                \"coverageRatios\": \"Interest coverage ratio is 97.45, suggesting strong ability to meet interest obligations.\",\n                \"financialFlexibility\": \"The company has significant financial flexibility with a low total debt to EBITDA ratio of 0.26.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power appears strong, with a projected revenue growth rate of 51.69% over the next five years.\",\n            \"growthProspects\": \"Sustainable growth driven by expanding online sales and new product launches.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 60% with increased market penetration.\",\n                \"Base case: Revenue growth stabilizes at 50% as market matures.\",\n                \"Bear case: Revenue growth slows to 30% due to increased competition.\"\n            ],\n            \"valuationAssessment\": \"Current P/E of 39.38 suggests the stock is overvalued compared to industry averages, which typically range from 20-30.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "fddf9ab1-bd7c-4744-a88a-7c93ba049d20",
+      "symbol": "NVDA.O",
+      "accuracy": {
+        "symbol": "NVDA.O",
+        "parse_error": false,
+        "total_claims": 14,
+        "verified_correct": 11,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 3,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5226
+      },
+      "latency_ms": 35915.318965911865,
+      "tokens_in": 6095,
+      "tokens_out": 1030,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"NVIDIA Corp is positioned as a leader in the semiconductor industry, driven by robust growth in its Compute & Networking segment, particularly in AI solutions. The company's strong financial metrics, including high ROE and net margins, suggest a sustainable competitive advantage, making it a compelling buy.\",\n        \"keyHighlights\": [\n            \"NVIDIA's revenue surged 69% year-over-year to $130.50B, driven by a 75% increase in the Compute & Networking segment, indicating strong demand for AI and data center solutions.\",\n            \"The company boasts an impressive ROE of 107.36% and a net margin of 55.85%, reflecting exceptional profitability and operational efficiency.\",\n            \"With a current P/E ratio of 46.15, NVIDIA is trading at a premium, but its growth potential justifies this valuation, especially with a 5-year CAGR of 64.13% in revenue per share.\",\n            \"The liquidity position is strong, with a current ratio of 4.44 and a quick ratio of 3.88, indicating robust short-term financial health.\",\n            \"NVIDIA's strategic focus on AI and data center solutions positions it well against competitors, with significant investments in R&D (12.91B) supporting future innovation.\"\n        ],\n        \"recommendedAction\": \"BUY\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"$200 - $220 based on growth projections and current valuation metrics.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [],\n            \"conservatismLevel\": \"Moderate; no significant aggressive accounting practices identified.\",\n            \"earningsQuality\": \"HIGH\",\n            \"keyPolicies\": [\n                \"Revenue recognition is consistent with industry standards, focusing on product sales and service contracts.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"NVIDIA holds a dominant position in the semiconductor industry, particularly in AI and gaming, with a strong market share and brand recognition.\",\n            \"competitiveAdvantage\": \"The company's technological leadership in GPUs and AI solutions provides a significant moat against competitors.\",\n            \"businessModel\": \"NVIDIA's business model is robust, leveraging high-margin products and services in rapidly growing markets.\",\n            \"keyRisks\": [\n                \"Intense competition from other semiconductor manufacturers.\",\n                \"Potential supply chain disruptions affecting production.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover is approximately 1.17, indicating effective use of assets to generate revenue.\",\n                \"operationalEfficiency\": \"Operating margin of 62.42% reflects strong operational efficiency.\",\n                \"managementEffectiveness\": \"Management has effectively increased net income by 26% year-over-year, showcasing strong strategic execution.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 4.44 and quick ratio of 3.88 indicate strong liquidity and ability to meet short-term obligations.\",\n                \"workingCapitalAnalysis\": \"Working capital management is efficient, with a cash conversion cycle of 82.4 days.\",\n                \"cashFlowQuality\": \"Cash from operating activities is robust at $64.09B, indicating strong cash generation capabilities.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 107.36% is driven by a net margin of 55.85% and an equity multiplier of 1.41.\",\n                \"profitabilityTrends\": \"Gross margin has improved to 75.45%, up from 59.51% in 2023, indicating enhanced profitability.\",\n                \"marginAnalysis\": \"Operating margin has also increased significantly, reflecting improved cost management and pricing power.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt to equity ratio is 0.11, indicating low leverage and financial risk.\",\n                \"coverageRatios\": \"Interest coverage ratio is 329.77, suggesting strong ability to cover interest expenses.\",\n                \"financialFlexibility\": \"NVIDIA's low debt levels provide significant financial flexibility for future investments.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is strong, with projected revenue growth driven by AI and data center demand.\",\n            \"growthProspects\": \"5-year CAGR of 64.13% in revenue per share indicates sustainable growth potential.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 80% due to increased AI adoption.\",\n                \"Base case: Revenue growth stabilizes at 64% as market matures.\",\n                \"Bear case: Revenue growth slows to 50% due to increased competition.\"\n            ],\n            \"valuationAssessment\": \"Current P/E of 46.15 is justified by high growth rates; valuation multiples suggest a target price range of $200 - $220.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "d0cf1847-5196-42b1-b892-c8d3cf75f685",
+      "symbol": "CUAN.JK",
+      "accuracy": {
+        "symbol": "CUAN.JK",
+        "parse_error": false,
+        "total_claims": 15,
+        "verified_correct": 13,
+        "errors": 1,
+        "warnings": 0,
+        "unverifiable": 1,
+        "hc_errors": 1,
+        "lc_errors": 0,
+        "accuracy_pct": 92.9,
+        "hc_accuracy_pct": 92.9,
+        "error_details": [
+          {
+            "claim_text": "th net income before taxes of $171.04M against i",
+            "metric": "net_income",
+            "value": 171.04,
+            "unit_char": "M",
+            "year": null,
+            "unit": "dollars",
+            "context_field": "detailedAnalysis.financialPerformance.solvencyAnalysis.coverageRatios",
+            "expected": 160.78,
+            "computed": 171.04,
+            "source": "income_statement.net_income[2024]",
+            "verdict": "error",
+            "deviation_pct": 6.38
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5594
+      },
+      "latency_ms": 19436.365127563477,
+      "tokens_in": 5829,
+      "tokens_out": 1115,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"PT Petrindo Jaya Kreasi Tbk has shown remarkable revenue growth and profitability improvements, driven by favorable market conditions in the coal industry. However, high valuation ratios and significant debt levels raise concerns about sustainability and risk exposure.\",\n        \"keyHighlights\": [\n            \"Revenue surged from $97.9M in 2023 to $801.7M in 2024, indicating a 717% year-over-year growth, driven by increased demand for high-calorie thermal coal.\",\n            \"Net income increased from $15.6M to $160.8M, reflecting a substantial improvement in profitability, with a net margin of 21.2% in 2024.\",\n            \"The company has a high P/E ratio of 73.03, suggesting it may be overvalued relative to its earnings, which could pose risks for investors.\",\n            \"Total debt has increased significantly to $813.20M, leading to a debt-to-equity ratio of 2.66, indicating high financial leverage and potential solvency risks.\",\n            \"Despite strong revenue growth, the company reported negative cash flow from operations of -$2.65M, raising concerns about cash generation capabilities.\"\n        ],\n        \"recommendedAction\": \"HOLD\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"The target price range is between IDR 1,200 and IDR 1,500, based on current earnings and market conditions, with caution advised due to high valuation metrics.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\n                \"High P/E ratio suggests potential overvaluation.\",\n                \"Negative cash flow from operations raises concerns about cash generation.\"\n            ],\n            \"conservatismLevel\": \"The accounting practices appear aggressive, particularly in revenue recognition given the rapid growth.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\n                \"Revenue recognition policies may need scrutiny given the rapid increase in sales.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"PT Petrindo Jaya Kreasi Tbk operates in a highly competitive coal industry in Indonesia, with significant demand for high-calorie thermal coal.\",\n            \"competitiveAdvantage\": \"The company benefits from its established mining operations and diverse product offerings, including metallurgical coal and silica sand.\",\n            \"businessModel\": \"The business model is robust, focusing on high-quality coal production and comprehensive mining services, but is vulnerable to commodity price fluctuations.\",\n            \"keyRisks\": [\n                \"Volatility in coal prices.\",\n                \"Regulatory changes in the mining sector.\",\n                \"High levels of debt impacting financial stability.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover is approximately 0.45, indicating moderate efficiency in utilizing assets to generate revenue.\",\n                \"operationalEfficiency\": \"Operating margin improved to 26.97% in 2024, reflecting better cost management.\",\n                \"managementEffectiveness\": \"Management has effectively increased revenues but must improve cash flow generation.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.95 and quick ratio of 1.74 indicate adequate short-term liquidity.\",\n                \"workingCapitalAnalysis\": \"Working capital management is under pressure with negative cash flow from operations.\",\n                \"cashFlowQuality\": \"Cash flow quality is low due to negative cash from operating activities.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 77.51% is driven by a high net margin of 21.2% and an equity multiplier of 5.81, indicating high financial leverage.\",\n                \"profitabilityTrends\": \"Net income has increased significantly, but the sustainability of this growth is uncertain given the high P/E ratio.\",\n                \"marginAnalysis\": \"Gross margin decreased to 14.7% in 2024, indicating rising costs relative to revenue.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt of $813.20M with a debt-to-equity ratio of 2.66 indicates high leverage.\",\n                \"coverageRatios\": \"Interest coverage ratio is low, with net income before taxes of $171.04M against interest expenses of $48.97M, suggesting potential difficulties in meeting interest obligations.\",\n                \"financialFlexibility\": \"Financial flexibility is constrained due to high debt levels and negative cash flow from operations.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is uncertain due to high valuation ratios and reliance on coal prices.\",\n            \"growthProspects\": \"While revenue growth is strong, sustainability is questionable given market volatility and high debt levels.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Continued demand for coal leads to revenue growth of 20% annually.\",\n                \"Base case: Moderate growth of 10% annually as market stabilizes.\",\n                \"Bear case: Declining coal prices lead to revenue contraction of 5%.\"\n            ],\n            \"valuationAssessment\": \"Valuation based on P/E and P/B ratios suggests the stock is overvalued, with a P/E of 73.03 and P/B of 31.91.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "e0d7970a-1e8a-4f1a-b729-15b982a0c1db",
+      "symbol": "3988.HK",
+      "accuracy": {
+        "symbol": "3988.HK",
+        "parse_error": false,
+        "total_claims": 9,
+        "verified_correct": 7,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 2,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5011
+      },
+      "latency_ms": 29827.429056167603,
+      "tokens_in": 5871,
+      "tokens_out": 1072,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"Bank of China Ltd is currently positioned in a challenging environment with declining revenues and net income, yet it maintains a strong dividend yield and low valuation multiples. The company's defensive characteristics and high liquidity suggest it can weather short-term volatility, making it a HOLD for conservative investors.\",\n    \"keyHighlights\": [\n      \"The P/E ratio of 5.89 and P/B ratio of 0.63 indicate the stock is undervalued compared to historical averages, suggesting potential upside if market conditions improve.\",\n      \"Despite a decrease in net income by 3% to RMB 54.36B in Q1 2025, the bank's dividend yield of 5.19% remains attractive, providing income to investors.\",\n      \"The current ratio of 1.18 and quick ratio of 1.18 indicate solid short-term liquidity, allowing the bank to meet its obligations without stress.\"\n    ],\n    \"recommendedAction\": \"HOLD\",\n    \"confidenceLevel\": \"MEDIUM\",\n    \"targetPriceRange\": \"Target price range of HKD 5.50 to HKD 6.00 based on historical P/E and P/B ratios, assuming stabilization in earnings.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [],\n      \"conservatismLevel\": \"Moderate; no aggressive accounting practices identified.\",\n      \"earningsQuality\": \"MEDIUM\",\n      \"keyPolicies\": [\n        \"Revenue recognition appears consistent with industry standards, focusing on interest income from loans.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"Bank of China operates in a highly competitive banking sector in China, facing pressure from both domestic and international banks.\",\n      \"competitiveAdvantage\": \"The bank's extensive network and government backing provide a competitive edge, though it faces challenges from fintech disruptors.\",\n      \"businessModel\": \"The diversified business model, including commercial banking and investment services, supports revenue generation but is vulnerable to economic downturns.\",\n      \"keyRisks\": [\n        \"Economic slowdown in China affecting loan demand and credit quality.\",\n        \"Regulatory changes impacting banking operations.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total assets of RMB 38,358.08B with net income of RMB 243.02B results in an asset turnover ratio of approximately 0.0063.\",\n        \"operationalEfficiency\": \"Operating margin of 30.1% indicates strong operational efficiency despite rising costs.\",\n        \"managementEffectiveness\": \"Management effectiveness is moderate, with ROE at 8.08% and declining trends in profitability.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio of 1.18 and quick ratio of 1.18 indicate adequate liquidity to cover short-term liabilities.\",\n        \"workingCapitalAnalysis\": \"Working capital management appears effective, with total current assets of RMB 37,772.19B against total current liabilities of RMB 31,920.19B.\",\n        \"cashFlowQuality\": \"Cash from operating activities was RMB 550.97B, indicating strong cash flow generation despite net income decline.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 8.08% can be broken down as follows: ROA (0.71%) \u00d7 Equity Multiplier (12.52) = 8.88%.\",\n        \"profitabilityTrends\": \"Net income decreased from RMB 246.37B in 2023 to RMB 243.02B in 2025, indicating a declining trend.\",\n        \"marginAnalysis\": \"Net margin of 25.77% shows profitability but is lower than previous years, reflecting increased operating expenses.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Debt-to-equity ratio of 0.84 indicates a moderate level of leverage, which is manageable given the bank's asset base.\",\n        \"coverageRatios\": \"Interest coverage ratio is not directly calculable but can be inferred from net income and interest expenses, suggesting adequate coverage.\",\n        \"financialFlexibility\": \"The bank's liquidity position and low debt levels provide financial flexibility to navigate economic challenges.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is uncertain due to declining revenue trends; however, the bank's strong dividend yield may attract income-focused investors.\",\n      \"growthProspects\": \"Growth sustainability is challenged by economic conditions, with a 5-year CAGR of 2.68% for revenue per share indicating modest growth.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Economic recovery leads to increased loan demand, driving revenue growth above 5%.\",\n        \"Base case: Stable economic conditions maintain current revenue levels with slight growth.\",\n        \"Bear case: Continued economic slowdown results in further declines in revenue and net income.\"\n      ],\n      \"valuationAssessment\": \"Valuation using P/E and P/B ratios suggests the stock is undervalued, with potential for price appreciation if earnings stabilize.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "e6e392d7-a9c0-4b37-a5b3-06a7229a57ff",
+      "symbol": "EEEE.L",
+      "accuracy": {
+        "symbol": "EEEE.L",
+        "parse_error": false,
+        "total_claims": 4,
+        "verified_correct": 2,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 2,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5343
+      },
+      "latency_ms": 26557.400703430176,
+      "tokens_in": 5284,
+      "tokens_out": 1003,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Empire Metals Ltd is currently facing significant financial challenges, with a consistent history of net losses and no reported revenues. Given the company's weak financial metrics and high valuation ratios, it is recommended to sell the stock as it poses a high risk for investors.\",\n        \"keyHighlights\": [\n            \"The company reported a net loss of \u00a34.09M for the fiscal year ended December 31, 2024, marking a 46% increase in losses compared to the previous year.\",\n            \"Empire Metals has a staggering P/B ratio of 32.5, indicating severe overvaluation relative to its book value, which raises concerns about its market price sustainability.\",\n            \"The current ratio stands at 27.48, suggesting strong short-term liquidity; however, this is misleading given the lack of revenue generation.\",\n            \"Return on equity (ROE) is at -53.77%, reflecting poor profitability and ineffective management of equity capital.\",\n            \"The company has not reported any revenue for the last two fiscal years, raising significant concerns about its operational viability.\"\n        ],\n        \"recommendedAction\": \"SELL\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"Given the current price of \u00a30.39 and the lack of revenue, a target price range of \u00a30.10 to \u00a30.20 is more realistic based on fundamental analysis.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\n                \"Consistent net losses with no revenue reported raises concerns about the sustainability of operations.\",\n                \"High P/B ratio suggests potential overvaluation and reliance on speculative investment.\"\n            ],\n            \"conservatismLevel\": \"The accounting practices appear aggressive given the lack of revenue and high losses.\",\n            \"earningsQuality\": \"LOW\",\n            \"keyPolicies\": [\n                \"Revenue recognition policies are questionable as no revenue has been reported for two consecutive years.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Empire Metals operates in the diversified mining sector, which is highly competitive and capital-intensive. The lack of revenue generation puts it at a disadvantage compared to peers.\",\n            \"competitiveAdvantage\": \"The company lacks sustainable competitive advantages, as evidenced by its inability to generate revenue despite having multiple projects.\",\n            \"businessModel\": \"The business model is vulnerable due to reliance on exploration without successful monetization.\",\n            \"keyRisks\": [\n                \"High operational costs with no revenue generation.\",\n                \"Market volatility in commodity prices affecting project viability.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total assets of \u00a38.42M with no revenue indicates extremely low asset turnover.\",\n                \"operationalEfficiency\": \"Operating income has consistently been negative, indicating poor operational efficiency.\",\n                \"managementEffectiveness\": \"Management effectiveness is questionable given the high losses and lack of revenue.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 27.48 indicates strong liquidity, but this is misleading without revenue.\",\n                \"workingCapitalAnalysis\": \"Working capital management is ineffective as evidenced by high operational losses.\",\n                \"cashFlowQuality\": \"Cash flow from operating activities is negative, indicating poor cash flow quality.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE = ROA \u00d7 Equity Multiplier; with ROA at -48.6% and equity multiplier at 1.02, ROE is -53.77%.\",\n                \"profitabilityTrends\": \"Net income has consistently declined, with a trend of increasing losses.\",\n                \"marginAnalysis\": \"Margins are non-existent due to zero revenue.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt is \u00a312.43K, which is minimal compared to total equity of \u00a38.26M, indicating low financial risk.\",\n                \"coverageRatios\": \"Interest coverage ratio is not applicable due to no interest expenses.\",\n                \"financialFlexibility\": \"Financial flexibility is limited due to ongoing losses and lack of revenue.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is uncertain given the lack of revenue and ongoing losses.\",\n            \"growthProspects\": \"Growth prospects are bleak without successful project monetization.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Successful project development leading to revenue generation.\",\n                \"Base case: Continued losses with no revenue, leading to potential dilution of shares.\",\n                \"Bear case: Further deterioration of financial position leading to insolvency.\"\n            ],\n            \"valuationAssessment\": \"Valuation is excessively high with a P/B ratio of 32.5, indicating that the stock is overvalued relative to its book value.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "c945c1c3-c623-4164-915d-15508373aaa1",
+      "symbol": "0388.HK",
+      "accuracy": {
+        "symbol": "0388.HK",
+        "parse_error": false,
+        "total_claims": 15,
+        "verified_correct": 15,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 0,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5202
+      },
+      "latency_ms": 34244.39716339111,
+      "tokens_in": 6145,
+      "tokens_out": 1072,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Hong Kong Exchanges and Clearing Ltd is facing significant challenges in revenue generation and profitability, leading to a recommendation to sell. The company's high valuation ratios, particularly the P/E of 31.75 and P/FCF of 215.99, suggest it is overvalued relative to its growth prospects.\",\n        \"keyHighlights\": [\n            \"Revenue decreased from HK$19.47B in 2021 to HK$17.35B in 2024, indicating a declining trend despite a recent quarterly increase.\",\n            \"Net income margins have shown volatility, with a net margin of 75.84% in 2024, but overall profitability is under pressure due to rising operating expenses.\",\n            \"The company's high P/B ratio of 10.18 and low total debt-to-equity ratio of 0.03 indicate a reliance on equity financing, which may limit growth potential.\"\n        ],\n        \"recommendedAction\": \"SELL\",\n        \"confidenceLevel\": \"HIGH\",\n        \"targetPriceRange\": \"Given the current price of HK$432.2 and the overvaluation indicated by high P/E and P/FCF ratios, a target price range of HK$350 to HK$400 is suggested.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\"High P/FCF ratio indicates potential overvaluation\", \"Increasing operating expenses may affect future profitability\"],\n            \"conservatismLevel\": \"Moderate; no aggressive accounting practices identified.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\"Revenue recognition appears consistent with industry standards; no significant off-balance sheet items noted.\"]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Hong Kong Exchanges operates in a competitive landscape with significant pressure from global exchanges and local market dynamics.\",\n            \"competitiveAdvantage\": \"The company benefits from its strategic location and established market presence but lacks significant differentiation in services.\",\n            \"businessModel\": \"The reliance on transaction-based revenue makes the business model vulnerable to market fluctuations.\",\n            \"keyRisks\": [\"Regulatory changes\", \"Increased competition from other exchanges\", \"Economic downturns affecting trading volumes\"]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover ratio is low, indicating inefficiencies in asset utilization.\",\n                \"operationalEfficiency\": \"Operating margin of 85.78% in 2024 shows strong operational efficiency but is declining from previous years.\",\n                \"managementEffectiveness\": \"Management has maintained a high return on equity (ROE) of 24.81%, but this is under pressure from declining revenues.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.09 indicates adequate short-term liquidity, but the quick ratio is also 1.09, suggesting reliance on receivables.\",\n                \"workingCapitalAnalysis\": \"Working capital management is efficient, but the increase in accounts receivable may pose risks.\",\n                \"cashFlowQuality\": \"Cash from operating activities is strong at HK$12.77B, but high capital expenditures and dividends paid reduce free cash flow.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of 24.81% is driven by a net margin of 75.84% and an equity multiplier of 7.09, indicating high leverage.\",\n                \"profitabilityTrends\": \"Net income increased from HK$12.54B in 2021 to HK$13.05B in 2024, but revenue trends are declining.\",\n                \"marginAnalysis\": \"Operating margin has decreased from 86.66% in 2023 to 85.78% in 2024, indicating pressure on profitability.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Total debt is low at HK$1.75B, with a debt-to-equity ratio of 0.03, indicating low financial risk.\",\n                \"coverageRatios\": \"Interest coverage ratio is very high at 247.98, indicating strong ability to meet interest obligations.\",\n                \"financialFlexibility\": \"The company has significant cash reserves (HK$110.45B) providing flexibility, but high equity financing limits growth potential.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is uncertain due to declining revenue trends and high valuation ratios.\",\n            \"growthProspects\": \"Growth sustainability is challenged by market conditions and competition; 5-year CAGR for revenue is only 4.86%.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 10% annually, leading to improved profitability.\",\n                \"Base case: Revenue stabilizes with modest growth of 4-5%, maintaining current profitability levels.\",\n                \"Bear case: Continued revenue decline leads to reduced margins and profitability.\"\n            ],\n            \"valuationAssessment\": \"Valuation appears high with a P/E of 31.75 and P/B of 10.18, suggesting overvaluation relative to growth prospects.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "b761983b-f25e-4d8a-81bf-97a4b52a385f",
+      "symbol": "ABBV.K",
+      "accuracy": {
+        "symbol": "ABBV.K",
+        "parse_error": false,
+        "total_claims": 15,
+        "verified_correct": 10,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 5,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4489
+      },
+      "latency_ms": 39142.460107803345,
+      "tokens_in": 6230,
+      "tokens_out": 987,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"AbbVie Inc. is facing challenges with declining net income and high valuation multiples, suggesting a cautious approach. However, its strong quality of earnings and robust product portfolio provide a foundation for potential recovery.\",\n    \"keyHighlights\": [\n      \"Despite a 8% revenue increase to $61.16B in 2025, net income fell to $4.23B, indicating profitability pressures.\",\n      \"The P/E ratio of 86.69 suggests the stock is overvalued compared to historical averages, raising concerns about future growth sustainability.\",\n      \"AbbVie maintains a high ROE of 15221.82, driven by significant leverage, but this also indicates potential risks if earnings do not stabilize.\"\n    ],\n    \"recommendedAction\": \"HOLD\",\n    \"confidenceLevel\": \"MEDIUM\",\n    \"targetPriceRange\": \"$180 - $210 based on current valuation metrics and growth prospects.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [\n        \"High level of unusual expenses ($5.86B in 2025) may indicate volatility in earnings quality.\"\n      ],\n      \"conservatismLevel\": \"Moderate; the company appears to use conservative accounting for revenue recognition.\",\n      \"earningsQuality\": \"MEDIUM\",\n      \"keyPolicies\": [\n        \"Aggressive R&D spending ($9.10B in 2025) may impact short-term profitability but supports long-term growth.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"AbbVie operates in a competitive pharmaceutical landscape with significant R&D investments, positioning it well against peers.\",\n      \"competitiveAdvantage\": \"Strong product portfolio in immunology and oncology provides a competitive moat.\",\n      \"businessModel\": \"The diversified product range supports revenue stability, but reliance on a few key products poses risks.\",\n      \"keyRisks\": [\n        \"Regulatory challenges and patent expirations could impact revenue streams.\",\n        \"High debt levels may limit financial flexibility.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover is low at 0.46, indicating inefficiencies in asset management.\",\n        \"operationalEfficiency\": \"Operating margin improved to 24.65% in 2025, reflecting better cost management.\",\n        \"managementEffectiveness\": \"Management has effectively controlled SGA expenses, which decreased from $14.86B in 2022 to $14.01B in 2025.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio at 0.67 indicates potential liquidity concerns; quick ratio is also low at 0.56.\",\n        \"workingCapitalAnalysis\": \"Working capital management is under pressure with a cash conversion cycle of 97.4 days.\",\n        \"cashFlowQuality\": \"Cash from operating activities remains strong at $19.03B, indicating good cash flow generation.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 15221.82 is driven by a high equity multiplier (total assets/equity), indicating high leverage.\",\n        \"profitabilityTrends\": \"Net margin decreased to 6.92% in 2025 from 20.4% in 2022, highlighting profitability challenges.\",\n        \"marginAnalysis\": \"Gross margin improved to 71.62%, but net margin pressures indicate potential issues in cost management.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Total debt stands at $67.50B, with a debt-to-equity ratio of -20.61, indicating high leverage.\",\n        \"coverageRatios\": \"Interest coverage ratio at 5.21 suggests adequate ability to cover interest expenses.\",\n        \"financialFlexibility\": \"High levels of debt may limit financial flexibility, especially in downturns.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is uncertain due to declining net income trends and high valuation multiples.\",\n      \"growthProspects\": \"Revenue growth is projected at a 5-year CAGR of 4.73%, but net income is declining at -1.68%.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Successful new product launches could drive revenue growth above 8%.\",\n        \"Base case: Moderate growth with stable earnings, maintaining current revenue levels.\",\n        \"Bear case: Continued decline in net income due to competitive pressures and regulatory challenges.\"\n      ],\n      \"valuationAssessment\": \"Current P/E of 86.69 suggests overvaluation; a more reasonable P/E range would be 15-20 based on industry averages.\"\n    }\n  }\n}\n```"
+    },
+    {
+      "sample_id": "34aa4b42-d388-4a9d-8c78-b189d04bf3bb",
+      "symbol": "2190.SE",
+      "accuracy": {
+        "symbol": "2190.SE",
+        "parse_error": false,
+        "total_claims": 8,
+        "verified_correct": 6,
+        "errors": 0,
+        "warnings": 0,
+        "unverifiable": 2,
+        "hc_errors": 0,
+        "lc_errors": 0,
+        "accuracy_pct": 100.0,
+        "hc_accuracy_pct": 100.0,
+        "error_details": []
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 5516
+      },
+      "latency_ms": 22833.14824104309,
+      "tokens_in": 6025,
+      "tokens_out": 1078,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n    \"executiveSummary\": {\n        \"investmentThesis\": \"Sustained Infrastructure Holding Company SJSC is positioned for growth in the marine port services sector, supported by a strong revenue increase and improving profitability metrics. However, the company faces challenges with high debt levels and fluctuating net income, which necessitates careful monitoring.\",\n        \"keyHighlights\": [\n            \"Revenue increased by 32% to SAR 351.5M in Q1 2025, driven by a 36% rise in the Port Development segment.\",\n            \"Despite a net income loss of SAR 741,880 in 2024, the company has shown resilience with a net income of SAR 73.52M in 2023, indicating potential recovery.\",\n            \"The P/E ratio of 30.11 suggests the stock may be overvalued compared to industry peers, but strong momentum scores indicate positive market sentiment.\",\n            \"The current ratio of 1.63 and quick ratio of 1.6 indicate adequate short-term liquidity, although cash flow from operations has decreased significantly.\",\n            \"The company\u2019s gross margin improved to 48.52% in 2024, reflecting better cost management and operational efficiency.\"\n        ],\n        \"recommendedAction\": \"BUY\",\n        \"confidenceLevel\": \"MEDIUM\",\n        \"targetPriceRange\": \"SAR 32 - SAR 35 based on projected revenue growth and improving margins.\"\n    },\n    \"detailedAnalysis\": {\n        \"accountingQuality\": {\n            \"accountingRedFlags\": [\n                \"Negative net income in 2024 raises concerns about earnings sustainability.\",\n                \"High interest expenses impacting net income significantly.\"\n            ],\n            \"conservatismLevel\": \"Moderate; the company appears to use conservative accounting practices but has aggressive financing strategies.\",\n            \"earningsQuality\": \"MEDIUM\",\n            \"keyPolicies\": [\n                \"Revenue recognition appears consistent with industry standards, but the high level of debt may affect future earnings quality.\"\n            ]\n        },\n        \"businessStrategy\": {\n            \"industryPosition\": \"Sustained Infrastructure operates in a growing marine port services industry, benefiting from increased trade and logistics demand in Saudi Arabia.\",\n            \"competitiveAdvantage\": \"The company has a competitive edge through its diversified service offerings in port operations and water desalination.\",\n            \"businessModel\": \"The business model is sustainable, but reliance on government contracts and economic conditions poses risks.\",\n            \"keyRisks\": [\n                \"High debt levels could limit financial flexibility.\",\n                \"Fluctuations in global trade volumes may impact revenue.\"\n            ]\n        },\n        \"financialPerformance\": {\n            \"efficiencyMetrics\": {\n                \"assetUtilization\": \"Total asset turnover ratio is approximately 0.22, indicating room for improvement in asset efficiency.\",\n                \"operationalEfficiency\": \"Operating margin improved to 28.61%, reflecting better cost management.\",\n                \"managementEffectiveness\": \"Management has shown effectiveness in improving gross margins but needs to address net income volatility.\"\n            },\n            \"liquidityAssessment\": {\n                \"shortTermLiquidity\": \"Current ratio of 1.63 and quick ratio of 1.6 indicate sufficient liquidity to cover short-term obligations.\",\n                \"workingCapitalAnalysis\": \"Working capital management is adequate, but cash flow from operations has decreased significantly, raising concerns.\",\n                \"cashFlowQuality\": \"Cash flow from operating activities was SAR 185.76M, down from SAR 452.55M, indicating potential cash flow issues.\"\n            },\n            \"profitabilityAnalysis\": {\n                \"roeDecomposition\": \"ROE of -0.05 in 2024 indicates poor profitability; ROA of -0.01 suggests inefficiencies in asset utilization.\",\n                \"profitabilityTrends\": \"Net margin decreased to 5.57% in 2024 from 8.05% in 2023, indicating declining profitability.\",\n                \"marginAnalysis\": \"Gross margin improved to 48.52%, but net margin decline raises concerns about overall profitability.\"\n            },\n            \"solvencyAnalysis\": {\n                \"debtLevel\": \"Debt-to-equity ratio of 0.93 indicates a high level of leverage, which could pose risks in downturns.\",\n                \"coverageRatios\": \"Interest coverage ratio is low at 1.31, suggesting potential difficulties in meeting interest obligations.\",\n                \"financialFlexibility\": \"High debt levels limit financial flexibility, making the company vulnerable to economic downturns.\"\n            }\n        },\n        \"prospectiveAnalysis\": {\n            \"futureEarnings\": \"Future earnings power is contingent on improving operational efficiency and managing debt levels.\",\n            \"growthProspects\": \"Revenue growth is projected at a CAGR of 14.42%, driven by increased demand in the marine services sector.\",\n            \"scenarioAnalysis\": [\n                \"Bull case: Revenue growth accelerates to 20%, leading to improved profitability.\",\n                \"Base case: Revenue grows at 14.42%, with stable margins.\",\n                \"Bear case: Economic downturn leads to flat revenue growth and continued net losses.\"\n            ],\n            \"valuationAssessment\": \"Current P/E of 30.11 suggests overvaluation; however, if growth targets are met, the stock could be fairly valued at SAR 32 - SAR 35.\"\n        }\n    }\n}\n```"
+    },
+    {
+      "sample_id": "79a1c9a2-7313-465a-a26e-97ce81be163b",
+      "symbol": "EBAY.O",
+      "accuracy": {
+        "symbol": "EBAY.O",
+        "parse_error": false,
+        "total_claims": 12,
+        "verified_correct": 10,
+        "errors": 1,
+        "warnings": 0,
+        "unverifiable": 1,
+        "hc_errors": 0,
+        "lc_errors": 1,
+        "accuracy_pct": 90.9,
+        "hc_accuracy_pct": 100.0,
+        "error_details": [
+          {
+            "claim_text": "ojected revenue growth rate of 13.87% over the",
+            "metric": "revenue_growth",
+            "value": 13.87,
+            "year": null,
+            "unit": "percent",
+            "context_field": "detailedAnalysis.prospectiveAnalysis.futureEarnings",
+            "expected": 7.98,
+            "computed": 13.87,
+            "source": "(revenue[2025]-revenue[2024])/revenue[2024] = (11100.0-10280.0)/10280.0",
+            "verdict": "error",
+            "deviation_pct": 73.88
+          }
+        ]
+      },
+      "quality": {
+        "valid_json": true,
+        "has_executive_summary": true,
+        "has_detailed_analysis": true,
+        "subsections": {
+          "businessStrategy": true,
+          "accountingQuality": true,
+          "financialPerformance": true,
+          "prospectiveAnalysis": true
+        },
+        "response_length": 4798
+      },
+      "latency_ms": 14268.336296081543,
+      "tokens_in": 6175,
+      "tokens_out": 1005,
+      "finish_reason": "stop",
+      "response_text": "```json\n{\n  \"executiveSummary\": {\n    \"investmentThesis\": \"eBay Inc. demonstrates strong profitability metrics and a solid market position, making it a compelling investment opportunity. Despite some challenges in revenue growth, the company's strategic initiatives and robust cash flow generation support a positive outlook.\",\n    \"keyHighlights\": [\n      \"eBay's ROE stands at an impressive 40.85%, indicating strong profitability relative to equity, driven by effective asset utilization and operational efficiency.\",\n      \"The company has maintained a healthy gross margin of 71.45%, although there is a slight downward trend, suggesting potential pricing pressures or increased costs.\",\n      \"With a current ratio of 1.1 and a quick ratio of 1.1, eBay demonstrates adequate short-term liquidity, although the cash conversion cycle has increased, indicating potential inefficiencies in working capital management.\"\n    ],\n    \"recommendedAction\": \"BUY\",\n    \"confidenceLevel\": \"HIGH\",\n    \"targetPriceRange\": \"$100 - $110 based on P/E and growth projections.\"\n  },\n  \"detailedAnalysis\": {\n    \"accountingQuality\": {\n      \"accountingRedFlags\": [],\n      \"conservatismLevel\": \"Moderate; no significant aggressive accounting practices identified.\",\n      \"earningsQuality\": \"HIGH\",\n      \"keyPolicies\": [\n        \"Revenue recognition is consistent with industry standards, focusing on realized sales.\"\n      ]\n    },\n    \"businessStrategy\": {\n      \"industryPosition\": \"eBay operates in a competitive online marketplace sector, facing challenges from rivals like Amazon and Alibaba. However, its unique value proposition in auctions and collectibles provides a niche advantage.\",\n      \"competitiveAdvantage\": \"eBay's strong brand recognition and established user base create a significant moat, supported by innovative features like AI-driven personalization.\",\n      \"businessModel\": \"The business model is sustainable, leveraging technology to enhance user experience and streamline seller processes.\",\n      \"keyRisks\": [\n        \"Increased competition from other e-commerce platforms.\",\n        \"Potential regulatory challenges in international markets.\"\n      ]\n    },\n    \"financialPerformance\": {\n      \"efficiencyMetrics\": {\n        \"assetUtilization\": \"Total asset turnover is approximately 0.63, indicating effective use of assets to generate revenue.\",\n        \"operationalEfficiency\": \"Operating margin has decreased to 20.51%, reflecting potential cost pressures.\",\n        \"managementEffectiveness\": \"Management has effectively maintained profitability despite revenue growth challenges.\"\n      },\n      \"liquidityAssessment\": {\n        \"shortTermLiquidity\": \"Current ratio of 1.1 and quick ratio of 1.1 indicate adequate liquidity to cover short-term obligations.\",\n        \"workingCapitalAnalysis\": \"Working capital management shows some inefficiencies, with a cash conversion cycle of 7.2 days.\",\n        \"cashFlowQuality\": \"Cash from operating activities is strong at $1.96B, supporting ongoing operations and dividend payments.\"\n      },\n      \"profitabilityAnalysis\": {\n        \"roeDecomposition\": \"ROE of 40.85% is driven by a net margin of 17.98% and an asset turnover of 0.63, indicating effective management of equity and assets.\",\n        \"profitabilityTrends\": \"Net income has shown a positive trend, increasing to $2.03B in 2025, despite a decline in net income per share CAGR of -4.29%.\",\n        \"marginAnalysis\": \"Gross margin has slightly decreased from 72.64% in 2022 to 71.45% in 2025, indicating potential cost pressures.\"\n      },\n      \"solvencyAnalysis\": {\n        \"debtLevel\": \"Total debt stands at $6.75B, with a debt-to-equity ratio of 1.46, indicating a moderate level of leverage.\",\n        \"coverageRatios\": \"Interest coverage ratio is strong at 9.26, suggesting good ability to meet interest obligations.\",\n        \"financialFlexibility\": \"Financial flexibility is adequate, with a total debt to EBITDA ratio of 2.51, indicating manageable debt levels.\"\n      }\n    },\n    \"prospectiveAnalysis\": {\n      \"futureEarnings\": \"Future earnings power is supported by a projected revenue growth rate of 13.87% over the next five years, although net income growth is uncertain.\",\n      \"growthProspects\": \"Sustainability of growth is contingent on eBay's ability to innovate and adapt to market changes.\",\n      \"scenarioAnalysis\": [\n        \"Bull case: Revenue growth accelerates to 15% with improved margins.\",\n        \"Base case: Revenue growth stabilizes at 10% with consistent margins.\",\n        \"Bear case: Revenue growth slows to 5% with declining margins.\"\n      ],\n      \"valuationAssessment\": \"Using a P/E ratio of 21.64, eBay's valuation appears reasonable compared to industry peers, suggesting potential for price appreciation.\"\n    }\n  }\n}\n```"
+    }
+  ]
+}

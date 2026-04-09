@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-04-08T09:07:01+00:00",
+  "model": "anthropic/claude-haiku-4",
+  "resolved_model": "anthropic/claude-haiku-4",
+  "temperature": 0.3,
+  "prompt_tag": "default",
+  "system_prompt": "You are a senior financial analyst at Goldman Sachs providing comprehensive investment analysis using Krishna Palepu's framework. Analyze company data and provide a detailed assessment. Do not fabricate numbers, using wrong numbers can lead to a catastrophic error and undermine credibility.",
+  "samples": 20,
+  "accuracy_pct": null,
+  "hc_accuracy_pct": null,
+  "total_claims": 0,
+  "verified_correct": 0,
+  "errors": 0,
+  "hc_errors": 0,
+  "lc_errors": 0,
+  "warnings": 0,
+  "unverifiable": 0,
+  "verification_rate_pct": null,
+  "avg_claims_per_response": null,
+  "parse_errors": 0,
+  "api_errors": 20,
+  "avg_latency_ms": 70.18930912017822,
+  "p50_latency_ms": 73.26078414916992,
+  "p95_latency_ms": 92.14997291564941,
+  "total_tokens_in": 0,
+  "total_tokens_out": 0,
+  "json_valid_pct": 0,
+  "schema_complete_pct": 0,
+  "status": "failed",
+  "results": [
+    {
+      "sample_id": "bc05508e-4eeb-4072-a56b-d3502b11a65e",
+      "symbol": "THC",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 59.285879135131836
+    },
+    {
+      "sample_id": "fe2ec8b3-52a6-42ce-a9e2-5dcebfa3b29f",
+      "symbol": "1109.HK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 87.23807334899902
+    },
+    {
+      "sample_id": "8b91e80f-f4fc-4354-b641-d55e4c30e232",
+      "symbol": "UPST.O",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 91.15719795227051
+    },
+    {
+      "sample_id": "339518fd-01a6-4118-a55d-ef51f636be47",
+      "symbol": "PLET.KL",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 57.47795104980469
+    },
+    {
+      "sample_id": "8ad86eea-ddc6-43d9-8ab6-79990fc33164",
+      "symbol": "BANPU.BK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 71.95496559143066
+    },
+    {
+      "sample_id": "967d42e9-de74-451b-85da-0a6517c31493",
+      "symbol": "CPF.BK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 92.14997291564941
+    },
+    {
+      "sample_id": "8d09521d-0ba0-456e-b996-7d2eebf91cad",
+      "symbol": "DELTA.BK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 76.26581192016602
+    },
+    {
+      "sample_id": "ca6bdf7a-ba69-4156-b82b-f5fed0793dc5",
+      "symbol": "BLK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 77.37493515014648
+    },
+    {
+      "sample_id": "c960d0dc-9cda-4fa5-a3d1-3ff123fce773",
+      "symbol": "LULU.O",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 50.523996353149414
+    },
+    {
+      "sample_id": "5e190520-c004-413e-950e-61a9c285800e",
+      "symbol": "SMG",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 79.78010177612305
+    },
+    {
+      "sample_id": "311beb27-7380-4521-8f7a-a067a3d463b4",
+      "symbol": "3078.TWO",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 65.65189361572266
+    },
+    {
+      "sample_id": "08ae7248-478c-40c4-ba90-1c30c020aa18",
+      "symbol": "9992.HK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 51.46288871765137
+    },
+    {
+      "sample_id": "fddf9ab1-bd7c-4744-a88a-7c93ba049d20",
+      "symbol": "NVDA.O",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 54.66794967651367
+    },
+    {
+      "sample_id": "d0cf1847-5196-42b1-b892-c8d3cf75f685",
+      "symbol": "CUAN.JK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 63.546180725097656
+    },
+    {
+      "sample_id": "e0d7970a-1e8a-4f1a-b729-15b982a0c1db",
+      "symbol": "3988.HK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 73.26078414916992
+    },
+    {
+      "sample_id": "e6e392d7-a9c0-4b37-a5b3-06a7229a57ff",
+      "symbol": "EEEE.L",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 87.66794204711914
+    },
+    {
+      "sample_id": "c945c1c3-c623-4164-915d-15508373aaa1",
+      "symbol": "0388.HK",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 47.71828651428223
+    },
+    {
+      "sample_id": "b761983b-f25e-4d8a-81bf-97a4b52a385f",
+      "symbol": "ABBV.K",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 82.30018615722656
+    },
+    {
+      "sample_id": "34aa4b42-d388-4a9d-8c78-b189d04bf3bb",
+      "symbol": "2190.SE",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 57.665109634399414
+    },
+    {
+      "sample_id": "79a1c9a2-7313-465a-a26e-97ce81be163b",
+      "symbol": "EBAY.O",
+      "api_error": "HTTP 400: {\"error\":{\"message\":\"anthropic/claude-haiku-4 is not a valid model ID\",\"code\":400},\"user_id\":\"org_2yMtyDcioK3DNTYB6rWYAgxuRxy\"}",
+      "latency_ms": 76.63607597351074
+    }
+  ]
+}
